@@ -7,1834 +7,2155 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-07-01 17:17+0800\n"
-"PO-Revision-Date: 2016-05-01 23:07-0700\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2016-11-17 10:19+0800\n"
+"PO-Revision-Date: 2016-11-17 10:47+0800\n"
+"Last-Translator: \n"
 "Language: zh\n"
 "Language-Team: zh <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
+"X-Generator: Poedit 1.8.11\n"
 
-#: superset/forms.py:140
+#: caravel/forms.py:140
 msgid "Viz"
 msgstr "图表"
 
-#: superset/forms.py:143
+#: caravel/forms.py:143
 msgid "The type of visualization to display"
 msgstr "显示图表类型"
 
-#: superset/forms.py:146
+#: caravel/forms.py:146
 msgid "Metrics"
 msgstr "度量"
 
-#: superset/forms.py:149 superset/forms.py:154
+#: caravel/forms.py:149 caravel/forms.py:154
 msgid "One or many metrics to display"
 msgstr "显示一个或多个度量"
 
-#: superset/forms.py:152
+#: caravel/forms.py:152
 msgid "Ordering"
 msgstr "排序"
 
-#: superset/forms.py:157 superset/views.py:294 superset/views.py:334
+#: caravel/forms.py:157 caravel/views.py:425 caravel/views.py:465
 msgid "Metric"
 msgstr "度量"
 
-#: superset/forms.py:160
+#: caravel/forms.py:160
 msgid "Choose the metric"
 msgstr "选择度量"
 
-#: superset/forms.py:163
+#: caravel/forms.py:163
 msgid "Chart Style"
 msgstr "图表样式"
 
-#: superset/forms.py:165
+#: caravel/forms.py:165
 msgid "stack"
 msgstr "堆积"
 
-#: superset/forms.py:166
+#: caravel/forms.py:166
 msgid "stream"
 msgstr "流"
 
-#: superset/forms.py:167
+#: caravel/forms.py:167
 msgid "expand"
 msgstr "展开"
 
-#: superset/forms.py:173
+#: caravel/forms.py:173
 msgid "Color Scheme"
 msgstr "配色"
 
-#: superset/forms.py:175
+#: caravel/forms.py:175
 msgid "fire"
 msgstr "火焰"
 
-#: superset/forms.py:176
+#: caravel/forms.py:176
 msgid "blue_white_yellow"
 msgstr "蓝白黄"
 
-#: superset/forms.py:177
+#: caravel/forms.py:177
 msgid "white_black"
 msgstr "白黑"
 
-#: superset/forms.py:178
+#: caravel/forms.py:178
 msgid "black_white"
 msgstr "黑白"
 
-#: superset/forms.py:184
+#: caravel/forms.py:184
 msgid "Normalize Across"
 msgstr "标准化"
 
-#: superset/forms.py:186
+#: caravel/forms.py:186
 msgid "heatmap"
 msgstr "热力图"
 
-#: superset/forms.py:187
+#: caravel/forms.py:187
 msgid "x"
 msgstr ""
 
-#: superset/forms.py:188
+#: caravel/forms.py:188
 msgid "y"
 msgstr ""
 
-#: superset/forms.py:191
-msgid ""
-"Color will be rendered based on a ratio of the cell against the sum of "
-"across this criteria"
+#: caravel/forms.py:191
+msgid "Color will be rendered based on a ratio of the cell against the sum of across this criteria"
 msgstr "颜色将根据比例进行渲染"
 
-#: superset/forms.py:197
+#: caravel/forms.py:197
 msgid "Color Scale"
 msgstr "色阶"
 
-#: superset/forms.py:199
+#: caravel/forms.py:199
 msgid "series"
 msgstr "项目"
 
-#: superset/forms.py:200
+#: caravel/forms.py:200
 msgid "overall"
 msgstr "综合"
 
-#: superset/forms.py:201
+#: caravel/forms.py:201
 msgid "change"
 msgstr "变化"
 
-#: superset/forms.py:204
+#: caravel/forms.py:204
 msgid "Defines how the color are attributed."
 msgstr "定义颜色属性"
 
-#: superset/forms.py:207
+#: caravel/forms.py:207
 msgid "Rendering"
 msgstr "渲染"
 
-#: superset/forms.py:209
+#: caravel/forms.py:209
 msgid "pixelated (Sharp)"
 msgstr "像素化(锐利)"
 
-#: superset/forms.py:210
+#: caravel/forms.py:210
 msgid "auto (Smooth)"
 msgstr "自动(平滑)"
 
-#: superset/forms.py:213
-msgid ""
-"image-rendering CSS attribute of the canvas object that defines how the "
-"browser scales up the image"
+#: caravel/forms.py:213
+msgid "image-rendering CSS attribute of the canvas object that defines how the browser scales up the image"
 msgstr "浏览器渲染图片的方式"
 
-#: superset/forms.py:218
+#: caravel/forms.py:218
 msgid "XScale Interval"
 msgstr "X轴步长"
 
-#: superset/forms.py:221
+#: caravel/forms.py:221
 msgid "Number of step to take between ticks when printing the x scale"
 msgstr "X轴每个刻度的单位长度"
 
-#: superset/forms.py:226
+#: caravel/forms.py:226
 msgid "YScale Interval"
 msgstr "Y轴步长"
 
-#: superset/forms.py:229
+#: caravel/forms.py:229
 msgid "Number of step to take between ticks when printing the y scale"
 msgstr "Y轴每个刻度的单位长度"
 
-#: superset/forms.py:234
+#: caravel/forms.py:234
 msgid "Stacked Bars"
 msgstr "堆积"
 
-#: superset/forms.py:239
+#: caravel/forms.py:239
+msgid "Show Markers"
+msgstr "显示标记"
+
+#: caravel/forms.py:246
+msgid "Bar Values"
+msgstr "柱的值"
+
+#: caravel/forms.py:251
 msgid "Extra Controls"
 msgstr "扩展控件"
 
-#: superset/forms.py:241
-msgid ""
-"Whether to show extra controls or not. Extra controls include things like"
-" making mulitBar charts stacked or side by side."
+#: caravel/forms.py:253
+msgid "Whether to show extra controls or not. Extra controls include things like making mulitBar charts stacked or side by side."
 msgstr "是否显示扩展控件"
 
-#: superset/forms.py:247
+#: caravel/forms.py:259
 msgid "Reduce X ticks"
 msgstr "X轴自适应"
 
-#: superset/forms.py:249
-msgid ""
-"Reduces the number of X axis ticks to be rendered. If true, the x axis "
-"wont overflow and labels may be missing. If false, a minimum width will "
-"be applied to columns and the width may overflow into an horizontal "
-"scroll."
+#: caravel/forms.py:261
+msgid "Reduces the number of X axis ticks to be rendered. If true, the x axis wont overflow and labels may be missing. If false, a minimum width will be applied to columns and the width may overflow into an horizontal scroll."
 msgstr "当X轴显示不下时，自动调整X轴步长"
 
-#: superset/forms.py:257
+#: caravel/forms.py:269
 msgid "Include Series"
 msgstr "显示项目"
 
-#: superset/forms.py:259
+#: caravel/forms.py:271
 msgid "Include series name as an axis"
 msgstr "坐标上显示项目名称"
 
-#: superset/forms.py:262
+#: caravel/forms.py:274
 msgid "Color Metric"
 msgstr "颜色度量"
 
-#: superset/forms.py:265
+#: caravel/forms.py:277
 msgid "A metric to use for color"
 msgstr "颜色度量项目"
 
-#: superset/forms.py:268
+#: caravel/forms.py:280
 msgid "Country Field Type"
 msgstr "国家名称编码方式"
 
-#: superset/forms.py:271
+#: caravel/forms.py:283
 msgid "Full name"
 msgstr "全名"
 
-#: superset/forms.py:272
+#: caravel/forms.py:284
 msgid "code International Olympic Committee (cioc)"
 msgstr "国际奥委会编码(cioc)"
 
-#: superset/forms.py:273
+#: caravel/forms.py:285
 msgid "code ISO 3166-1 alpha-2 (cca2)"
 msgstr "ISO 3166-1 alpha-2编码(cca2)"
 
-#: superset/forms.py:274
+#: caravel/forms.py:286
 msgid "code ISO 3166-1 alpha-3 (cca3)"
 msgstr "ISO 3166-1 alpha-3编码(cca3)"
 
-#: superset/forms.py:276
-msgid ""
-"The country code standard that Superset should expect to find in the "
-"[country] column"
+#: caravel/forms.py:288
+msgid "The country code standard that Caravel should expect to find in the [country] column"
 msgstr "数据库中国家名称类型"
 
-#: superset/forms.py:281
+#: caravel/forms.py:293
 msgid "Group by"
 msgstr "分组"
 
-#: superset/forms.py:283
+#: caravel/forms.py:295
 msgid "One or many fields to group by"
 msgstr "根据一个或多个字段分组"
 
-#: superset/forms.py:286 superset/forms.py:291
+#: caravel/forms.py:298 caravel/forms.py:303
 msgid "Columns"
 msgstr "列"
 
-#: superset/forms.py:288
+#: caravel/forms.py:300
 msgid "One or many fields to pivot as columns"
 msgstr "将一个或多个字段做为列"
 
-#: superset/forms.py:293 superset/forms.py:298 superset/forms.py:303
+#: caravel/forms.py:305 caravel/forms.py:311 caravel/forms.py:317
 msgid "Columns to display"
 msgstr "显示列"
 
-#: superset/forms.py:296
+#: caravel/forms.py:308
 msgid "X"
 msgstr ""
 
-#: superset/forms.py:301
+#: caravel/forms.py:314
 msgid "Y"
 msgstr ""
 
-#: superset/forms.py:306
+#: caravel/forms.py:320
 msgid "Origin"
 msgstr "起点"
 
-#: superset/forms.py:308
+#: caravel/forms.py:322
 msgid "default"
 msgstr "默认"
 
-#: superset/forms.py:309 superset/forms.py:467
+#: caravel/forms.py:323 caravel/forms.py:481
 msgid "now"
 msgstr "现在"
 
-#: superset/forms.py:312
-msgid ""
-"Defines the origin where time buckets start, accepts natural dates as in "
-"'now', 'sunday' or '1970-01-01'"
+#: caravel/forms.py:326
+msgid "Defines the origin where time buckets start, accepts natural dates as in 'now', 'sunday' or '1970-01-01'"
 msgstr "定义时间起点，支持'now', 'sunday' or '1970-01-01'等"
 
-#: superset/forms.py:317
+#: caravel/forms.py:331
 msgid "Bottom Margin"
 msgstr "底部留白"
 
-#: superset/forms.py:320
+#: caravel/forms.py:334
 msgid "Bottom marging, in pixels, allowing for more room for axis labels"
 msgstr "底部留白的像素大小"
 
-#: superset/forms.py:325
+#: caravel/forms.py:339
 msgid "Time Granularity"
 msgstr "时间粒度"
 
-#: superset/forms.py:328
+#: caravel/forms.py:342
 msgid "all"
 msgstr "全部"
 
-#: superset/forms.py:329
+#: caravel/forms.py:343
 msgid "5 seconds"
 msgstr "5秒"
 
-#: superset/forms.py:330
+#: caravel/forms.py:344
 msgid "30 seconds"
 msgstr "30秒"
 
-#: superset/forms.py:331
+#: caravel/forms.py:345
 msgid "1 minute"
 msgstr "1分钟"
 
-#: superset/forms.py:332
+#: caravel/forms.py:346
 msgid "5 minutes"
 msgstr "5分钟"
 
-#: superset/forms.py:333
+#: caravel/forms.py:347
 msgid "1 hour"
 msgstr "1小时"
 
-#: superset/forms.py:334
+#: caravel/forms.py:348
 msgid "6 hour"
 msgstr "6小时"
 
-#: superset/forms.py:335
+#: caravel/forms.py:349
 msgid "1 day"
 msgstr "1天"
 
-#: superset/forms.py:336
+#: caravel/forms.py:350
 msgid "7 days"
 msgstr "1周"
 
-#: superset/forms.py:338
-msgid ""
-"The time granularity for the visualization. Note that you can type and "
-"use simple natural language as in '10 seconds', '1 day' or '56 weeks'"
+#: caravel/forms.py:352
+msgid "The time granularity for the visualization. Note that you can type and use simple natural language as in '10 seconds', '1 day' or '56 weeks'"
 msgstr "图表时间粒度。可以使用'10 seconds', '1 day', '56 weeks'等"
 
-#: superset/forms.py:344
+#: caravel/forms.py:358
 msgid "Domain"
 msgstr "区域"
 
-#: superset/forms.py:347 superset/forms.py:361 superset/models.py:417
-#: superset/models.py:435
+#: caravel/forms.py:361 caravel/forms.py:375 caravel/models.py:526
+#: caravel/models.py:550 caravel/models.py:570 caravel/models.py:586
 msgid "hour"
 msgstr "小时"
 
-#: superset/forms.py:348 superset/forms.py:362 superset/models.py:419
-#: superset/models.py:427 superset/models.py:436
+#: caravel/forms.py:362 caravel/forms.py:376 caravel/models.py:528
+#: caravel/models.py:552 caravel/models.py:560 caravel/models.py:571
+#: caravel/models.py:588
 msgid "day"
 msgstr "天"
 
-#: superset/forms.py:349 superset/forms.py:363 superset/models.py:407
-#: superset/models.py:420 superset/models.py:428 superset/models.py:437
+#: caravel/forms.py:363 caravel/forms.py:377 caravel/models.py:530
+#: caravel/models.py:553 caravel/models.py:561 caravel/models.py:572
+#: caravel/models.py:590
 msgid "week"
 msgstr "周"
 
-#: superset/forms.py:350 superset/forms.py:364 superset/models.py:408
-#: superset/models.py:422 superset/models.py:429 superset/models.py:438
+#: caravel/forms.py:364 caravel/forms.py:378 caravel/models.py:532
+#: caravel/models.py:555 caravel/models.py:563 caravel/models.py:573
+#: caravel/models.py:592
 msgid "month"
 msgstr "月"
 
-#: superset/forms.py:351 superset/models.py:439
+#: caravel/forms.py:365 caravel/models.py:574 caravel/models.py:596
 msgid "year"
 msgstr "年"
 
-#: superset/forms.py:353
+#: caravel/forms.py:367
 msgid "The time unit used for the grouping of blocks"
 msgstr "每个区域表示的时间段"
 
-#: superset/forms.py:357
+#: caravel/forms.py:371
 msgid "Subdomain"
 msgstr "方块"
 
-#: superset/forms.py:360 superset/forms.py:701
+#: caravel/forms.py:374 caravel/forms.py:725
 msgid "min"
 msgstr "分钟"
 
-#: superset/forms.py:366
-msgid ""
-"The time unit for each block. Should be a smaller unit than "
-"domain_granularity. Should be larger or equal to Time Grain"
+#: caravel/forms.py:380
+msgid "The time unit for each block. Should be a smaller unit than domain_granularity. Should be larger or equal to Time Grain"
 msgstr "每个区域内方块表示的时间段。必须比区域时间段小，比时间粒度大。"
 
-#: superset/forms.py:371
+#: caravel/forms.py:385
 msgid "Link Length"
 msgstr "链接长度"
 
-#: superset/forms.py:383
+#: caravel/forms.py:397
 msgid "Link length in the force layout"
 msgstr "有向图中的链接长度"
 
-#: superset/forms.py:386
+#: caravel/forms.py:400
 msgid "Charge"
 msgstr "缩放"
 
-#: superset/forms.py:400
+#: caravel/forms.py:414
 msgid "Charge in the force layout"
 msgstr "有向图缩放大小"
 
-#: superset/forms.py:403 superset/models.py:406 superset/models.py:416
-#: superset/models.py:426 superset/models.py:432
+#: caravel/forms.py:417 caravel/models.py:521 caravel/models.py:544
+#: caravel/models.py:559 caravel/models.py:567 caravel/models.py:577
 msgid "Time Column"
 msgstr "时间字段"
 
-#: superset/forms.py:406
-msgid ""
-"The time column for the visualization. Note that you can define arbitrary"
-" expression that return a DATETIME column in the table editor. Also note "
-"that the filter below is applied against this column or expression"
+#: caravel/forms.py:420
+msgid "The time column for the visualization. Note that you can define arbitrary expression that return a DATETIME column in the table editor. Also note that the filter below is applied against this column or expression"
 msgstr "图表中的时间字段。可以在表格编辑器中返回任意DATETIME列。"
 
-#: superset/forms.py:414
+#: caravel/forms.py:428
 msgid "Resample Rule"
 msgstr "重采样尺度"
 
-#: superset/forms.py:417
+#: caravel/forms.py:431
 msgid "1T"
 msgstr ""
 
-#: superset/forms.py:418
+#: caravel/forms.py:432
 msgid "1H"
 msgstr ""
 
-#: superset/forms.py:419
+#: caravel/forms.py:433
 msgid "1D"
 msgstr ""
 
-#: superset/forms.py:420
+#: caravel/forms.py:434
 msgid "7D"
 msgstr ""
 
-#: superset/forms.py:421
+#: caravel/forms.py:435
 msgid "1M"
 msgstr ""
 
-#: superset/forms.py:422
+#: caravel/forms.py:436
 msgid "1AS"
 msgstr ""
 
-#: superset/forms.py:424
+#: caravel/forms.py:438
 msgid "Pandas resample rule"
 msgstr "重采样尺度"
 
-#: superset/forms.py:427
+#: caravel/forms.py:441
 msgid "Resample How"
 msgstr "重采样方式"
 
-#: superset/forms.py:431 superset/forms.py:700
+#: caravel/forms.py:445 caravel/forms.py:724
 msgid "mean"
 msgstr "平均值"
 
-#: superset/forms.py:432 superset/forms.py:699
+#: caravel/forms.py:446 caravel/forms.py:723
 msgid "sum"
 msgstr "求和"
 
-#: superset/forms.py:433 superset/forms.py:703
+#: caravel/forms.py:447 caravel/forms.py:727
 msgid "median"
 msgstr "中间值"
 
-#: superset/forms.py:435
+#: caravel/forms.py:449
 msgid "Pandas resample how"
 msgstr "重采样方式"
 
-#: superset/forms.py:438
+#: caravel/forms.py:452
 msgid "Resample Fill Method"
 msgstr "插值方式"
 
-#: superset/forms.py:442
+#: caravel/forms.py:456
 msgid "ffill"
 msgstr ""
 
-#: superset/forms.py:443
+#: caravel/forms.py:457
 msgid "bfill"
 msgstr ""
 
-#: superset/forms.py:445
+#: caravel/forms.py:459
 msgid "Pandas resample fill method"
 msgstr "重采样插值方式"
 
-#: superset/forms.py:448
+#: caravel/forms.py:462
 msgid "Since"
 msgstr "起始时间"
 
-#: superset/forms.py:451
+#: caravel/forms.py:465
 msgid "1 hour ago"
 msgstr "1小时前"
 
-#: superset/forms.py:452
+#: caravel/forms.py:466
 msgid "12 hours ago"
 msgstr "12小时前"
 
-#: superset/forms.py:453 superset/forms.py:468
+#: caravel/forms.py:467 caravel/forms.py:482
 msgid "1 day ago"
 msgstr "1天前"
 
-#: superset/forms.py:454 superset/forms.py:469
+#: caravel/forms.py:468 caravel/forms.py:483
 msgid "7 days ago"
 msgstr "7天前"
 
-#: superset/forms.py:455 superset/forms.py:470
+#: caravel/forms.py:469 caravel/forms.py:484
 msgid "28 days ago"
 msgstr "28天前"
 
-#: superset/forms.py:456 superset/forms.py:471
+#: caravel/forms.py:470 caravel/forms.py:485
 msgid "90 days ago"
 msgstr "90天前"
 
-#: superset/forms.py:457 superset/forms.py:472
+#: caravel/forms.py:471 caravel/forms.py:486
 msgid "1 year ago"
 msgstr "1年前"
 
-#: superset/forms.py:459
-msgid ""
-"Timestamp from filter. This supports free form typing and natural "
-"language as in '1 day ago', '28 days' or '3 years'"
+#: caravel/forms.py:473
+msgid "Timestamp from filter. This supports free form typing and natural language as in '1 day ago', '28 days' or '3 years'"
 msgstr "时间范围。支持自定义，可使用自然语言，如'1 day ago', '28 days' or '3 years'"
 
-#: superset/forms.py:464
+#: caravel/forms.py:478
 msgid "Until"
 msgstr "结束时间"
 
-#: superset/forms.py:476
+#: caravel/forms.py:490
 msgid "Max Bubble Size"
 msgstr "气泡最大尺寸"
 
-#: superset/forms.py:489
+#: caravel/forms.py:503
 msgid "Whisker/outlier options"
 msgstr "非异常值选项"
 
-#: superset/forms.py:491
+#: caravel/forms.py:505
 msgid "Determines how whiskers and outliers are calculated."
 msgstr "计算最大/最小非异常值的方法"
 
-#: superset/forms.py:494
+#: caravel/forms.py:508
 msgid "Tukey"
 msgstr "图基法"
 
-#: superset/forms.py:495
+#: caravel/forms.py:509
 msgid "Min/max (no outliers)"
 msgstr "最小/最大值(无异常值)"
 
-#: superset/forms.py:496
+#: caravel/forms.py:510
 msgid "2/98 percentiles"
 msgstr "2/98百分比"
 
-#: superset/forms.py:497
+#: caravel/forms.py:511
 msgid "9/91 percentiles"
 msgstr "9/91百分比"
 
-#: superset/forms.py:501
+#: caravel/forms.py:515
 msgid "Ratio"
 msgstr "比例"
 
-#: superset/forms.py:503
+#: caravel/forms.py:517
 msgid "Target aspect ratio for treemap tiles."
 msgstr "树状图中方块的比例"
 
-#: superset/forms.py:506 superset/viz.py:856 superset/viz.py:905
+#: caravel/forms.py:520 caravel/viz.py:909 caravel/viz.py:958
 msgid "Number format"
 msgstr "数字格式"
 
-#: superset/forms.py:516
-msgid ""
-"D3 format syntax for numbers https: //github.com/mbostock/\n"
+#: caravel/forms.py:530
+msgid "D3 format syntax for numbers https: //github.com/mbostock/\n"
 "d3/wiki/Formatting"
 msgstr "自定义格式请参考 https://github.com/mbostock/d3/wiki/Formatting"
 
-#: superset/forms.py:521
+#: caravel/forms.py:535
 msgid "Row limit"
 msgstr "行数上限"
 
-#: superset/forms.py:527
+#: caravel/forms.py:541
 msgid "Series limit"
 msgstr "项目上限"
 
-#: superset/forms.py:530
+#: caravel/forms.py:544
 msgid "Limits the number of time series that get displayed"
 msgstr "设置显示项目的数量上限"
 
-#: superset/forms.py:534
+#: caravel/forms.py:548
 msgid "Rolling"
 msgstr "滚动"
 
-#: superset/forms.py:537
-msgid ""
-"Defines a rolling window function to apply, works along with the "
-"[Periods] text box"
+#: caravel/forms.py:551
+msgid "Defines a rolling window function to apply, works along with the [Periods] text box"
 msgstr "滚动窗口聚合函数，配合[周期]使用"
 
-#: superset/forms.py:542
+#: caravel/forms.py:556
 msgid "Periods"
 msgstr "周期"
 
-#: superset/forms.py:544
-msgid ""
-"Defines the size of the rolling window function, relative to the time "
-"granularity selected"
+#: caravel/forms.py:558
+msgid "Defines the size of the rolling window function, relative to the time granularity selected"
 msgstr "滚动窗口大小，取值和时间粒度相关"
 
-#: superset/forms.py:549 superset/viz.py:1192
+#: caravel/forms.py:563 caravel/viz.py:1323
 msgid "Series"
 msgstr "项目"
 
-#: superset/forms.py:552
-msgid ""
-"Defines the grouping of entities. Each serie is shown as a specific color"
-" on the chart and has a legend toggle"
+#: caravel/forms.py:566
+msgid "Defines the grouping of entities. Each series is shown as a specific color on the chart and has a legend toggle"
 msgstr "定义分组实体。每个项目有特定的颜色和图例。"
 
-#: superset/forms.py:558
+#: caravel/forms.py:572
 msgid "Entity"
 msgstr "实体"
 
-#: superset/forms.py:561
+#: caravel/forms.py:575
 msgid "This define the element to be plotted on the chart"
 msgstr "在图表上绘制的元素"
 
-#: superset/forms.py:564
+#: caravel/forms.py:578
 msgid "X Axis"
 msgstr "X轴"
 
-#: superset/forms.py:567
+#: caravel/forms.py:581
 msgid "Metric assigned to the [X] axis"
 msgstr "X轴对应的项目"
 
-#: superset/forms.py:570
+#: caravel/forms.py:584
 msgid "Y Axis"
 msgstr "Y轴"
 
-#: superset/forms.py:573
+#: caravel/forms.py:587
 msgid "Metric assigned to the [Y] axis"
 msgstr "Y轴对应的项目"
 
-#: superset/forms.py:576
+#: caravel/forms.py:590
 msgid "Bubble Size"
 msgstr "气泡大小"
 
-#: superset/forms.py:581
+#: caravel/forms.py:595
 msgid "URL"
 msgstr ""
 
-#: superset/forms.py:582
-msgid ""
-"The URL, this field is templated, so you can integrate {{ width }} and/or"
-" {{ height }} in your URL string."
-msgstr ""
+#: caravel/forms.py:596
+msgid "The URL, this field is templated, so you can integrate {{ width }} and/or {{ height }} in your URL string."
+msgstr "这个URL字段为模板，所以你可以整合{{ width }}和/或{{ height }} 在你的URL字串中。"
 
-#: superset/forms.py:589
+#: caravel/forms.py:603
 msgid "X Axis Label"
 msgstr "X轴名称"
 
-#: superset/forms.py:593
+#: caravel/forms.py:607
 msgid "Y Axis Label"
 msgstr "Y轴名称"
 
-#: superset/forms.py:597
+#: caravel/forms.py:611
 msgid "Custom WHERE clause"
 msgstr "WHERE语句"
 
-#: superset/forms.py:599
-msgid ""
-"The text in this box gets included in your query's WHERE clause, as an "
-"AND to other criteria. You can include complex expression, parenthesis "
-"and anything else supported by the backend it is directed towards."
+#: caravel/forms.py:613
+msgid "The text in this box gets included in your query's WHERE clause, as an AND to other criteria. You can include complex expression, parenthesis and anything else supported by the backend it is directed towards."
 msgstr "语句将包含到WHERE子句中，并用AND连接到其他条件。"
 
-#: superset/forms.py:606
+#: caravel/forms.py:620
 msgid "Custom HAVING clause"
 msgstr "HAVING语句"
 
-#: superset/forms.py:608
-msgid ""
-"The text in this box gets included in your query's HAVING clause, as an "
-"AND to other criteria. You can include complex expression, parenthesis "
-"and anything else supported by the backend it is directed towards."
+#: caravel/forms.py:622
+msgid "The text in this box gets included in your query's HAVING clause, as an AND to other criteria. You can include complex expression, parenthesis and anything else supported by the backend it is directed towards."
 msgstr "语句将包含到HAVE子句中，并用AND连接到其他条件"
 
-#: superset/forms.py:615
+#: caravel/forms.py:629
 msgid "Comparison Period Lag"
 msgstr "滞后比较周期"
 
-#: superset/forms.py:616
+#: caravel/forms.py:630
 msgid "Based on granularity, number of time periods to compare against"
 msgstr "比较的时间周期，基于时间粒度"
 
-#: superset/forms.py:621
+#: caravel/forms.py:635
 msgid "Comparison suffix"
 msgstr "后缀文字"
 
-#: superset/forms.py:622
+#: caravel/forms.py:636
 msgid "Suffix to apply after the percentage display"
 msgstr "百分比后面显示的文本"
 
-#: superset/forms.py:625
+#: caravel/forms.py:639
 msgid "Table Timestamp Format"
 msgstr "时间格式"
 
-#: superset/forms.py:628
+#: caravel/forms.py:642
 msgid "Timestamp Format"
 msgstr "时间格式"
 
-#: superset/forms.py:631
+#: caravel/forms.py:645
 msgid "Series Height"
 msgstr "项目高度"
 
-#: superset/forms.py:634
+#: caravel/forms.py:648
 msgid "Pixel height of each series"
 msgstr "每个项目的像素高度"
 
-#: superset/forms.py:637
+#: caravel/forms.py:651
 msgid "X axis format"
 msgstr "X轴数值格式"
 
-#: superset/forms.py:640 superset/forms.py:655
-msgid ""
-"D3 format syntax for y axis https: //github.com/mbostock/\n"
+#: caravel/forms.py:654 caravel/forms.py:669
+msgid "D3 format syntax for y axis https: //github.com/mbostock/\n"
 "d3/wiki/Formatting"
 msgstr "自定义格式请参考 https://github.com/mbostock/d3/wiki/Formatting"
 
-#: superset/forms.py:645
+#: caravel/forms.py:659
 msgid "Y axis format"
 msgstr "Y轴数值格式"
 
-#: superset/forms.py:660
+#: caravel/forms.py:674
 msgid "Markup Type"
 msgstr "标记类型"
 
-#: superset/forms.py:662
+#: caravel/forms.py:676
 msgid "markdown"
-msgstr ""
+msgstr "记下"
 
-#: superset/forms.py:663
+#: caravel/forms.py:677
 msgid "html"
 msgstr ""
 
-#: superset/forms.py:666
+#: caravel/forms.py:680
 msgid "Pick your favorite markup language"
 msgstr "选择标记语言"
 
-#: superset/forms.py:669
+#: caravel/forms.py:683
 msgid "Rotation"
 msgstr "旋转"
 
-#: superset/forms.py:671
+#: caravel/forms.py:685
 msgid "random"
 msgstr "随机"
 
-#: superset/forms.py:672
+#: caravel/forms.py:686
 msgid "flat"
 msgstr "水平"
 
-#: superset/forms.py:673
+#: caravel/forms.py:687
 msgid "square"
 msgstr "方格"
 
-#: superset/forms.py:676
+#: caravel/forms.py:690
 msgid "Rotation to apply to words in the cloud"
 msgstr "词汇云中词语的旋转方式"
 
-#: superset/forms.py:679
+#: caravel/forms.py:693
 msgid "Line Style"
 msgstr "线形"
 
-#: superset/forms.py:681
+#: caravel/forms.py:695
 msgid "linear"
 msgstr "折线"
 
-#: superset/forms.py:682
+#: caravel/forms.py:696
 msgid "basis"
 msgstr "B样条曲线"
 
-#: superset/forms.py:683
+#: caravel/forms.py:697
 msgid "cardinal"
 msgstr "基本样条曲线"
 
-#: superset/forms.py:684
+#: caravel/forms.py:698
 msgid "monotone"
 msgstr "三次插值曲线"
 
-#: superset/forms.py:685
+#: caravel/forms.py:699
 msgid "step-before"
 msgstr "前阶梯线"
 
-#: superset/forms.py:686
+#: caravel/forms.py:700
 msgid "step-after"
 msgstr "后阶梯线"
 
-#: superset/forms.py:689
+#: caravel/forms.py:703
 msgid "Line interpolation as defined by d3.js"
 msgstr "定义线形"
 
-#: superset/forms.py:692
+#: caravel/forms.py:706
+msgid "Label Type"
+msgstr "标签类型"
+
+#: caravel/forms.py:709
+msgid "Category Name"
+msgstr "类名"
+
+#: caravel/forms.py:710
+msgid "Value"
+msgstr "值"
+
+#: caravel/forms.py:711
+msgid "Percentage"
+msgstr "百分率"
+
+#: caravel/forms.py:713
+msgid "What should be shown on the label?"
+msgstr "标签中应该显示什么？"
+
+#: caravel/forms.py:716
 msgid "Code"
 msgstr "代码"
 
-#: superset/forms.py:693
+#: caravel/forms.py:717
 msgid "Put your code here"
 msgstr "输入代码"
 
-#: superset/forms.py:697
+#: caravel/forms.py:721
 msgid "Aggregation function"
 msgstr "聚合函数"
 
-#: superset/forms.py:702
+#: caravel/forms.py:726
 msgid "max"
 msgstr "最大值"
 
-#: superset/forms.py:704
+#: caravel/forms.py:728
 msgid "stdev"
 msgstr "标准差"
 
-#: superset/forms.py:705
+#: caravel/forms.py:729
 msgid "var"
 msgstr "变量值"
 
-#: superset/forms.py:708
-msgid ""
-"Aggregate function to apply when pivoting and computing the total rows "
-"and columns"
+#: caravel/forms.py:732
+msgid "Aggregate function to apply when pivoting and computing the total rows and columns"
 msgstr "透视时计算行和列的聚合函数"
 
-#: superset/forms.py:713
+#: caravel/forms.py:737
 msgid "Font Size From"
 msgstr "最小字体"
 
-#: superset/forms.py:715
+#: caravel/forms.py:739
 msgid "Font size for the smallest value in the list"
 msgstr "列表中最小值的字体大小"
 
-#: superset/forms.py:718
+#: caravel/forms.py:742
 msgid "Font Size To"
 msgstr "最大字体"
 
-#: superset/forms.py:720
+#: caravel/forms.py:744
 msgid "Font size for the biggest value in the list"
 msgstr "列表中最大值的字体大小"
 
-#: superset/forms.py:723
+#: caravel/forms.py:747
 msgid "Range Filter"
 msgstr "区间过滤"
 
-#: superset/forms.py:725
+#: caravel/forms.py:749
 msgid "Whether to display the time range interactive selector"
 msgstr "是否显示时间区间选择控件"
 
-#: superset/forms.py:729
+#: caravel/forms.py:753
+msgid "Date Filter"
+msgstr "日期筛选"
+
+#: caravel/forms.py:755
+msgid "Whether to include a time filter"
+msgstr "是否包含时间的筛选"
+
+#: caravel/forms.py:758
 msgid "Data Table"
 msgstr "明细表"
 
-#: superset/forms.py:731
+#: caravel/forms.py:760
 msgid "Whether to display the interactive data table"
 msgstr "是否显示明细表"
 
-#: superset/forms.py:734
+#: caravel/forms.py:763
 msgid "Search Box"
 msgstr "搜索框"
 
-#: superset/forms.py:736
+#: caravel/forms.py:765
 msgid "Whether to include a client side search box"
 msgstr "是否显示搜索框"
 
-#: superset/forms.py:740
+#: caravel/forms.py:769
 msgid "Show Bubbles"
 msgstr "显示气泡"
 
-#: superset/forms.py:742
+#: caravel/forms.py:771
 msgid "Whether to display bubbles on top of countries"
 msgstr "是否在国家上显示气泡"
 
-#: superset/forms.py:746
+#: caravel/forms.py:775
 msgid "Legend"
 msgstr "图例"
 
-#: superset/forms.py:748
+#: caravel/forms.py:777
 msgid "Whether to display the legend (toggles)"
 msgstr "是否显示图例"
 
-#: superset/forms.py:751
+#: caravel/forms.py:780
 msgid "X bounds"
 msgstr "X轴边界"
 
-#: superset/forms.py:753
+#: caravel/forms.py:782
 msgid "Whether to display the min and max values of the X axis"
 msgstr "是否显示X轴的最大最小值"
 
-#: superset/forms.py:757
+#: caravel/forms.py:786
 msgid "Rich Tooltip"
 msgstr "详细信息"
 
-#: superset/forms.py:759
+#: caravel/forms.py:788
 msgid "The rich tooltip shows a list of all series for that point in time"
 msgstr "显示特定时间点的所有项目"
 
-#: superset/forms.py:764
+#: caravel/forms.py:793
 msgid "Y Axis Zero"
 msgstr "Y轴从0开始"
 
-#: superset/forms.py:766
+#: caravel/forms.py:795
 msgid "Force the Y axis to start at 0 instead of the minimum value"
 msgstr "Y轴不是从最小值开始"
 
-#: superset/forms.py:771
+#: caravel/forms.py:800
 msgid "Y Log"
 msgstr "Y轴对数刻度"
 
-#: superset/forms.py:773
+#: caravel/forms.py:802
 msgid "Use a log scale for the Y axis"
 msgstr "Y轴刻度值按照对数分布显示"
 
-#: superset/forms.py:776
+#: caravel/forms.py:805
 msgid "X Log"
 msgstr "X轴对数刻度"
 
-#: superset/forms.py:778
+#: caravel/forms.py:807
 msgid "Use a log scale for the X axis"
 msgstr "X轴刻度值按照对数分布显示"
 
-#: superset/forms.py:781
+#: caravel/forms.py:810
 msgid "Donut"
 msgstr "环形图"
 
-#: superset/forms.py:783
+#: caravel/forms.py:812
 msgid "Do you want a donut or a pie?"
 msgstr "使用环形图替代饼图"
 
-#: superset/forms.py:786
+#: caravel/forms.py:815
+msgid "Put labels outside"
+msgstr "把标签置于外面"
+
+#: caravel/forms.py:817
+msgid "Put the labels outside the pie?"
+msgstr "把标签置于饼图外？"
+
+#: caravel/forms.py:820
 msgid "Contribution"
 msgstr "贡献值"
 
-#: superset/forms.py:788
+#: caravel/forms.py:822
 msgid "Compute the contribution to the total"
 msgstr "在总和中的贡献值"
 
-#: superset/forms.py:791
+#: caravel/forms.py:825
 msgid "Period Ratio"
 msgstr "周期比"
 
-#: superset/forms.py:794
-msgid ""
-"[integer] Number of period to compare against, this is relative to the "
-"granularity selected"
+#: caravel/forms.py:828
+msgid "[integer] Number of period to compare against, this is relative to the granularity selected"
 msgstr "[整数]要比较的周期数，和粒度有关"
 
-#: superset/forms.py:799
+#: caravel/forms.py:833
+msgid "Period Ratio Type"
+msgstr "周期比类型"
+
+#: caravel/forms.py:836
+msgid "factor"
+msgstr "因素"
+
+#: caravel/forms.py:837
+msgid "growth"
+msgstr "增长"
+
+#: caravel/forms.py:838
+msgid "value"
+msgstr "值"
+
+#: caravel/forms.py:840
+msgid "`factor` means (new/previous), `growth` is ((new/previous) - 1), `value` is (new-previous)"
+msgstr "`因素` 指 (new/previous), `增长` 指 ((new/previous) - 1), `值` 指 (new-previous)"
+
+#: caravel/forms.py:845
 msgid "Time Shift"
 msgstr "时间飘移"
 
-#: superset/forms.py:801
-msgid ""
-"Overlay a timeseries from a relative time period. Expects relative time "
-"delta in natural language (example:  24 hours, 7 days, 56 weeks, 365 days"
+#: caravel/forms.py:847
+msgid "Overlay a timeseries from a relative time period. Expects relative time delta in natural language (example:  24 hours, 7 days, 56 weeks, 365 days"
 msgstr "相关时间周期内的时间偏移。相对时间，如:  24 hours, 7 days, 56 weeks, 365 days"
 
-#: superset/forms.py:808
+#: caravel/forms.py:854
 msgid "Subheader"
 msgstr "子标题"
 
-#: superset/forms.py:809
+#: caravel/forms.py:855
 msgid "Description text that shows up below your Big Number"
 msgstr "在数字下显示的文本"
 
-#: superset/forms.py:816
-msgid ""
-"'count' is COUNT(*) if a group by is used. Numerical columns will be "
-"aggregated with the aggregator. Non-numerical columns will be used to "
-"label points. Leave empty to get a count of points in each cluster."
+#: caravel/forms.py:862
+msgid "'count' is COUNT(*) if a group by is used. Numerical columns will be aggregated with the aggregator. Non-numerical columns will be used to label points. Leave empty to get a count of points in each cluster."
 msgstr "对分组使用COUNT(*)。"
 
-#: superset/forms.py:832
+#: caravel/forms.py:879
 msgid "Base layer map style"
-msgstr ""
+msgstr "基层地图类型"
 
-#: superset/forms.py:835
+#: caravel/forms.py:882
 msgid "Clustering Radius"
 msgstr "簇半径"
 
-#: superset/forms.py:848
-msgid ""
-"The radius (in pixels) the algorithm uses to define a cluster. Choose 0 "
-"to turn off clustering, but beware that a large number of points (>1000) "
-"will cause lag."
+#: caravel/forms.py:895
+msgid "The radius (in pixels) the algorithm uses to define a cluster. Choose 0 to turn off clustering, but beware that a large number of points (>1000) will cause lag."
 msgstr "定义簇的半径大小(单位为像素)。0表示不显示簇。大量的点会导致显示缓慢。"
 
-#: superset/forms.py:854
+#: caravel/forms.py:901
 msgid "Point Radius"
 msgstr "点半径"
 
-#: superset/forms.py:857
-msgid ""
-"The radius of individual points (ones that are not in a cluster). Either "
-"a numerical column or 'Auto', which scales the point based on the largest"
-" cluster"
+#: caravel/forms.py:904
+msgid "The radius of individual points (ones that are not in a cluster). Either a numerical column or 'Auto', which scales the point based on the largest cluster"
 msgstr "不在簇中点的半径。选择'Auto'时根据最大的簇自动调整。"
 
-#: superset/forms.py:863
+#: caravel/forms.py:910
 msgid "Point Radius Unit"
 msgstr "点半径单位"
 
-#: superset/forms.py:870
+#: caravel/forms.py:917
 msgid "The unit of measure for the specified point radius"
 msgstr "点半径的测量单位"
 
-#: superset/forms.py:873
+#: caravel/forms.py:920
 msgid "Opacity"
-msgstr ""
+msgstr "不透明度"
 
-#: superset/forms.py:875
+#: caravel/forms.py:922
 msgid "Opacity of all clusters, points, and labels. Between 0 and 1."
-msgstr ""
+msgstr "集簇、点和标签的不透明度。在0和1之间。"
 
-#: superset/forms.py:880
+#: caravel/forms.py:927
 msgid "Zoom"
-msgstr ""
+msgstr "缩放"
 
-#: superset/forms.py:883
+#: caravel/forms.py:930
 msgid "Zoom level of the map"
-msgstr ""
+msgstr "地图缩放级别"
 
-#: superset/forms.py:887
+#: caravel/forms.py:934
 msgid "Default latitude"
 msgstr "默认纬度"
 
-#: superset/forms.py:889
+#: caravel/forms.py:936
 msgid "Latitude of default viewport"
 msgstr "视窗默认纬度"
 
-#: superset/forms.py:893
+#: caravel/forms.py:940
 msgid "Default longitude"
 msgstr "默认经度"
 
-#: superset/forms.py:895
+#: caravel/forms.py:942
 msgid "Longitude of default viewport"
 msgstr "视窗默认经度"
 
-#: superset/forms.py:899
+#: caravel/forms.py:946
 msgid "Live render"
 msgstr "实时更新"
 
-#: superset/forms.py:901
+#: caravel/forms.py:948
 msgid "Points and clusters will update as viewport is being changed"
 msgstr "视窗发生改变时，点和簇实时更新"
 
-#: superset/forms.py:905
+#: caravel/forms.py:952
 msgid "RGB Color"
-msgstr ""
+msgstr "RGB颜色"
 
-#: superset/forms.py:915
+#: caravel/forms.py:962
 msgid "The color for points and clusters in RGB"
-msgstr ""
+msgstr "点和簇的RGB颜色"
 
-#: superset/forms.py:978
+#: caravel/forms.py:1025
 msgid "SQL"
 msgstr ""
 
-#: superset/forms.py:980
+#: caravel/forms.py:1027
 msgid "This section exposes ways to include snippets of SQL in your query"
 msgstr "用于定制SQL语句"
 
-#: superset/forms.py:991
+#: caravel/forms.py:1038
 msgid "Time Grain"
 msgstr "时间粒度"
 
-#: superset/forms.py:994
-msgid ""
-"The time granularity for the visualization. This applies a date "
-"transformation to alter your time column and defines a new time "
-"granularity.The options here are defined on a per database engine basis "
-"in the Superset source code"
+#: caravel/forms.py:1041
+msgid "The time granularity for the visualization. This applies a date transformation to alter your time column and defines a new time granularity.The options here are defined on a per database engine basis in the Caravel source code"
 msgstr "图表中的时间粒度。用于替换时间字段默认的时间粒度。"
 
-#: superset/forms.py:1027 superset/forms.py:1031
+#: caravel/forms.py:1076 caravel/forms.py:1080
 msgid "Filter 1"
-msgstr ""
+msgstr "筛选1"
 
-#: superset/forms.py:1036
+#: caravel/forms.py:1085
 msgid "Super"
-msgstr ""
+msgstr "超级"
 
-#: superset/forms.py:1040
+#: caravel/forms.py:1089
 msgid "Time"
 msgstr "时间"
 
-#: superset/forms.py:1045
+#: caravel/forms.py:1094
 msgid "Time related form attributes"
 msgstr "时间相关的属性"
 
-#: superset/models.py:409
-msgid "quarter"
-msgstr "季度"
-
-#: superset/models.py:410
-msgid "week_ending_saturday"
-msgstr "周日为一周开始"
-
-#: superset/models.py:412
-msgid "week_start_sunday"
-msgstr "周日为一周结束"
-
-#: superset/models.py:433
+#: caravel/models.py:522 caravel/models.py:545 caravel/models.py:568
+#: caravel/models.py:578
 msgid "second"
 msgstr "秒"
 
-#: superset/models.py:434
+#: caravel/models.py:524 caravel/models.py:548 caravel/models.py:569
+#: caravel/models.py:580
 msgid "minute"
 msgstr "分"
 
-#: superset/models.py:620
-msgid ""
-"Datetime column not provided as part table configuration and is required "
-"by this type of chart"
+#: caravel/models.py:534 caravel/models.py:594
+msgid "quarter"
+msgstr "季度"
+
+#: caravel/models.py:536
+msgid "week_ending_saturday"
+msgstr "周日为一周开始"
+
+#: caravel/models.py:539
+msgid "week_start_sunday"
+msgstr "周日为一周结束"
+
+#: caravel/models.py:582
+msgid "5 minute"
+msgstr "5分钟"
+
+#: caravel/models.py:584
+msgid "half hour"
+msgstr "半小时"
+
+#: caravel/models.py:623
+msgid "Unable to convert unix epoch to datetime"
+msgstr "无法将unix时间戳转换成日期"
+
+#: caravel/models.py:790
+msgid "Datetime column not provided as part table configuration and is required by this type of chart"
 msgstr "缺少时间字段"
 
-#: superset/models.py:1328
+#: caravel/models.py:1634
 msgid "No data was returned."
 msgstr "没有数据"
 
-#: superset/views.py:203
-msgid ""
-"Whether to make this column available as a [Time Granularity] option, "
-"column has to be DATETIME or DATETIME-like"
+#: caravel/views.py:74
+msgid "This endpoint requires the `all_datasource_access` permission"
+msgstr "这个终端需要有'访问所有数据'的权限"
+
+#: caravel/views.py:76
+msgid "The datasource seems to have been deleted"
+msgstr "这个数据源似乎已经被删除"
+
+#: caravel/views.py:77
+msgid "The access requests seem to have been deleted"
+msgstr "访问请求似乎已经被删除"
+
+#: caravel/views.py:79
+msgid "The user seems to have been deleted"
+msgstr "这个用户似乎已经被删除"
+
+#: caravel/views.py:80
+msgid "You don't have access to this datasource"
+msgstr "你无权使用这个数据库"
+
+#: caravel/views.py:84
+#, python-format
+msgid "This view requires the database %(name)s or `all_datasource_access` permission"
+msgstr "本视图需要有`访问所有数据`的权限"
+
+#: caravel/views.py:89
+#, python-format
+msgid "This endpoint requires the datasource %(name)s, database or `all_datasource_access` permission"
+msgstr "这个终端需要有数据源 %(name)s, 数据库或者'访问所以数据'权限"
+
+#: caravel/views.py:94
+#, python-format
+msgid "Datasource %(name)s already exists"
+msgstr "数据源 %(name)s 已经存在"
+
+#: caravel/views.py:103
+msgid "Stacktrace is hidden. Change the SHOW_STACKTRACE configuration setting to enable it"
+msgstr "Stacktrace被隐藏了。改变SHOW_STACKTRACE设置来开启它"
+
+#: caravel/views.py:149
+msgid "You don't have the rights to alter [{}]"
+msgstr "你没有权限修改 [{}]"
+
+#: caravel/views.py:312
+msgid "Whether to make this column available as a [Time Granularity] option, column has to be DATETIME or DATETIME-like"
 msgstr "是否将此列作为[时间粒度]选项, 列中的数据类型必须是DATETIME"
 
-#: superset/views.py:230 superset/views.py:259
+#: caravel/views.py:317
+msgid "a valid SQL expression as supported by the underlying backend. Example: `substr(name, 1, 1)`"
+msgstr "后台执行需要合法的SQL语句,如`count(DISTINCT userid)`"
+
+#: caravel/views.py:320
+msgid "The pattern of timestamp format, use <a href='https://docs.python.org/2/library/datetime.html#strftime-strptime-behavior'>python datetime string pattern</a> expression. If time is stored in epoch format, put `epoch_s` or `epoch_ms`. Leave `Database Expression` below empty if timestamp is stored in String or Integer(epoch) type"
+msgstr "时间戳的样式，使用<a href='https://docs.python.org/2/library/datetime.html#strftime-strptime-behavior'>python的日期字符串</a>表达式。如果时间是用新纪元格式的，使用`epoch_s`或者`epoch_ms`。如果时间戳使用String或者整数类型，请保持`Database Expression`是空的。"
+
+#: caravel/views.py:329
+#, python-format
+msgid "The database expression to cast internal datetime constants to database date/timestamp type according to the DBAPI. The expression should follow the pattern of %Y-%m-%d %H:%M:%S, based on different DBAPI. The string should be a python string formatter \n"
+"`Ex: TO_DATE('{}', 'YYYY-MM-DD HH24:MI:SS')` for OracleSuperset uses default expression based on DB URI if this field is blank."
+msgstr "请根据DBAPI数据库表达式来创建日期或者时间戳类型的内部常量。表达式的样式%Y-%m-%d %H:%M:%S，基于不同的DBAPI。OracleSuperset 基于数据库URL使用默认的表达式，其字符串必须是python的字符串格式\n"
+" `Ex: TO_DATE('{}', 'YYYY-MM-DD HH24:MI:SS')` "
+
+#: caravel/views.py:339 caravel/views.py:369
 msgid "Column"
 msgstr "列"
 
-#: superset/views.py:231 superset/views.py:296 superset/views.py:336
+#: caravel/views.py:340 caravel/views.py:427 caravel/views.py:467
 msgid "Verbose Name"
 msgstr "全称"
 
-#: superset/views.py:232 superset/views.py:295 superset/views.py:335
-#: superset/views.py:537 superset/views.py:691
+#: caravel/views.py:341 caravel/views.py:426 caravel/views.py:466
+#: caravel/views.py:801 caravel/views.py:1058
 msgid "Description"
 msgstr "描述"
 
-#: superset/views.py:233 superset/views.py:262
+#: caravel/views.py:342 caravel/views.py:372
 msgid "Groupable"
 msgstr "可分组"
 
-#: superset/views.py:234 superset/views.py:263
+#: caravel/views.py:343 caravel/views.py:373
 msgid "Filterable"
 msgstr "可筛选"
 
-#: superset/views.py:235 superset/views.py:299 superset/views.py:433
-#: superset/views.py:543
+#: caravel/views.py:344 caravel/views.py:430 caravel/views.py:628
+#: caravel/views.py:807
 msgid "Table"
 msgstr "表"
 
-#: superset/views.py:236 superset/views.py:264
+#: caravel/views.py:345 caravel/views.py:374
 msgid "Count Distinct"
 msgstr "计数"
 
-#: superset/views.py:237 superset/views.py:265
+#: caravel/views.py:346 caravel/views.py:375
 msgid "Sum"
 msgstr "求和"
 
-#: superset/views.py:238 superset/views.py:266
+#: caravel/views.py:347 caravel/views.py:376
 msgid "Min"
 msgstr "最小值"
 
-#: superset/views.py:239 superset/views.py:267
+#: caravel/views.py:348 caravel/views.py:377
 msgid "Max"
 msgstr "最大值"
 
-#: superset/views.py:240
+#: caravel/views.py:349
 msgid "Expression"
 msgstr "表达式"
 
-#: superset/views.py:241
+#: caravel/views.py:350
 msgid "Is temporal"
 msgstr "表示时间"
 
-#: superset/views.py:242
+#: caravel/views.py:351
 msgid "Datetime Format"
 msgstr "时间格式"
 
-#: superset/views.py:243
+#: caravel/views.py:352
 msgid "Database Expression"
 msgstr "数据库表达式"
 
-#: superset/views.py:260 superset/views.py:297 superset/views.py:337
-#: superset/views.py:568
+#: caravel/views.py:370 caravel/views.py:428 caravel/views.py:468
 msgid "Type"
 msgstr "类型"
 
-#: superset/views.py:261 superset/views.py:536
+#: caravel/views.py:371 caravel/views.py:717 caravel/views.py:800
 msgid "Datasource"
 msgstr "数据源"
 
-#: superset/views.py:286 superset/views.py:328
-msgid ""
-"Whether the access to this metric is restricted to certain roles. Only "
-"roles with the permission 'metric access on XXX (the name of this "
-"metric)' are allowed to access this metric"
-msgstr "是否访问受限。只有有权限的用户才能访问。"
+#: caravel/views.py:381
+msgid "this field can be used to specify  a `dimensionSpec` as documented [here](http://druid.io/docs/latest/querying/dimensionspecs.html). Make sure to input valid JSON and that the `outputName` matches the `column_name` defined above."
+msgstr "这里是指定`dimensionSpec` 的文档(http://druid.io/docs/latest/querying/dimensionspecs.html)。确保输入正确的JSON同时`outputName`必须和定义的`column_name`对应 "
 
-#: superset/views.py:298
+#: caravel/views.py:408
+msgid "a valid SQL expression as supported by the underlying backend. Example: `count(DISTINCT userid)`"
+msgstr "后台执行需要合法的SQL语句,如`count(DISTINCT userid)`"
+
+#: caravel/views.py:410 caravel/views.py:459
+msgid "Whether the access to this metric is restricted to certain roles. Only roles with the permission 'metric access on XXX (the name of this metric)' are allowed to access this metric"
+msgstr "是否限制访问,只有有权限的用户才能访问。"
+
+#: caravel/views.py:415
+msgid "d3 formatting string as defined [here](https://github.com/d3/d3-format/blob/master/README.md#format). For instance, this default formatting applies in the Table visualization and allow for different metric to use different formats"
+msgstr "这里有d3中定义的字符串(https://github.com/d3/d3-format/blob/master/README.md#format).例如,某默认格式适用于表格的可视化同时允许不同的指标使用不同的格式"
+
+#: caravel/views.py:429
 msgid "SQL Expression"
 msgstr "SQL表达式"
 
-#: superset/views.py:338 superset/views.py:656
+#: caravel/views.py:455
+msgid "use `postagg` as the metric type if you are defining a [Druid Post Aggregation](http://druid.io/docs/latest/querying/post-aggregations.html)"
+msgstr "使用 `postagg` 作为度量值,当定义了[Druid Post Aggregation](http://druid.io/docs/latest/querying/post-aggregations.html)"
+
+#: caravel/views.py:469 caravel/views.py:1021
 msgid "JSON"
 msgstr ""
 
-#: superset/views.py:339
+#: caravel/views.py:470
 msgid "Druid Datasource"
 msgstr "Druid数据源"
 
-#: superset/views.py:378 superset/views.py:435
+#: caravel/views.py:508
+msgid "Refer to the [SqlAlchemy docs](http://docs.sqlalchemy.org/en/rel_1_0/core/engines.html#database-urls) for more information on how to structure your URI."
+msgstr "参考 [SqlAlchemy docs](http://docs.sqlalchemy.org/en/rel_1_0/core/engines.html#database-urls)来制定你的URL"
+
+#: caravel/views.py:513
+msgid "Expose this DB in SQL Lab"
+msgstr "在SQL实验室显示这个数据库"
+
+#: caravel/views.py:514
+msgid "Allow users to run synchronous queries, this is the default and should work well for queries that can be executed within a web request scope (<~1 minute)"
+msgstr "允许用户同步查询，这是默认的同时能够在(不多于1分钟)的网页请求容器中正常执行"
+
+#: caravel/views.py:518
+msgid "Allow users to run queries, against an async backend. This assumes that you have a Celery worker setup as well as a results backend."
+msgstr "允许用户针对异步后端进行查询。前提是已经设置好了Celery任务调度器和后端已经有了结果。"
+
+#: caravel/views.py:522
+msgid "Allow CREATE TABLE AS option in SQL Lab"
+msgstr "允许在SQL实验室中使用CREATE TABLE AS"
+
+#: caravel/views.py:523
+msgid "Allow users to run non-SELECT statements (UPDATE, DELETE, CREATE, ...) in SQL Lab"
+msgstr "允许用户在SQL实验室执行non-SELECT指令(UPDATE, DELETE, CREATE, ...)"
+
+#: caravel/views.py:527
+msgid "When allowing CREATE TABLE AS option in SQL Lab, this option forces the table to be created in this schema"
+msgstr "当执行CREATE TABLE AS指令，会强制把表建立在当前模式中"
+
+#: caravel/views.py:531
+msgid "JSON string containing extra configuration elements. The ``engine_params`` object gets unpacked into the [sqlalchemy.create_engine](http://docs.sqlalchemy.org/en/latest/core/engines.html#sqlalchemy.create_engine) call, while the ``metadata_params`` gets unpacked into the [sqlalchemy.MetaData](http://docs.sqlalchemy.org/en/rel_1_0/core/metadata.html#sqlalchemy.schema.MetaData) call. "
+msgstr "JSON字符包含额外的配置元素.``engine_params`` object在[sqlalchemy.create_engine]是未封装的(http://docs.sqlalchemy.org/en/latest/core/engines.html#sqlalchemy.create_engine),``metadata_params``在 [sqlalchemy.MetaData]也是未封装的(http://docs.sqlalchemy.org/en/rel_1_0/core/metadata.html#sqlalchemy.schema.MetaData)"
+
+#: caravel/views.py:541
+msgid "Expose in SQL Lab"
+msgstr "在SQL实验室中显示"
+
+#: caravel/views.py:542
+msgid "Allow CREATE TABLE AS"
+msgstr "允许CREATE TABLE AS"
+
+#: caravel/views.py:543
+msgid "Allow DML"
+msgstr "允许DML"
+
+#: caravel/views.py:544
+msgid "CTAS Schema"
+msgstr "CTAS模式"
+
+#: caravel/views.py:545 caravel/views.py:630
 msgid "Database"
 msgstr "数据库"
 
-#: superset/views.py:379
-msgid "SQL link"
-msgstr "SQL查询"
-
-#: superset/views.py:380 superset/views.py:534 superset/views.py:610
+#: caravel/views.py:546 caravel/views.py:798 caravel/views.py:928
 msgid "Creator"
 msgstr "作者"
 
-#: superset/views.py:381 superset/views.py:436
+#: caravel/views.py:547 caravel/views.py:631
 msgid "Last Changed"
 msgstr "更新时间"
 
-#: superset/views.py:382
+#: caravel/views.py:548
 msgid "SQLAlchemy URI"
 msgstr ""
 
-#: superset/views.py:383 superset/views.py:442 superset/views.py:533
-#: superset/views.py:697
+#: caravel/views.py:549 caravel/views.py:636 caravel/views.py:797
+#: caravel/views.py:1064
 msgid "Cache Timeout"
 msgstr "缓存时间"
 
-#: superset/views.py:384
+#: caravel/views.py:550
 msgid "Extra"
 msgstr "扩展"
 
-#: superset/views.py:434
-msgid "Changed By"
-msgstr "修改人"
+#: caravel/views.py:563
+msgid "Import Dashboards"
+msgstr "导入看板"
 
-#: superset/views.py:437
-msgid "SQL Editor"
-msgstr "SQL查询"
+#: caravel/views.py:567 caravel/views.py:2374
+msgid "Manage"
+msgstr "管理"
 
-#: superset/views.py:438 superset/views.py:693
-msgid "Is Featured"
-msgstr "是否突出"
+#: caravel/views.py:574
+msgid "Databases"
+msgstr "数据库"
 
-#: superset/views.py:439
-msgid "Schema"
-msgstr "模式"
+#: caravel/views.py:577 caravel/views.py:700 caravel/views.py:764
+#: caravel/views.py:1093 caravel/views.py:2352
+msgid "Sources"
+msgstr "资源"
 
-#: superset/views.py:440 superset/views.py:695
-msgid "Default Endpoint"
-msgstr ""
-
-#: superset/views.py:441
-msgid "Offset"
-msgstr "偏移"
-
-#: superset/views.py:482 superset/views.py:690
-msgid "Cluster"
-msgstr "集群"
-
-#: superset/views.py:483
-msgid "Coordinator Host"
-msgstr ""
-
-#: superset/views.py:484
-msgid "Coordinator Port"
-msgstr ""
-
-#: superset/views.py:485
-msgid "Coordinator Endpoint"
-msgstr ""
-
-#: superset/views.py:486
-msgid "Broker Host"
-msgstr ""
-
-#: superset/views.py:487
-msgid "Broker Port"
-msgstr ""
-
-#: superset/views.py:488
-msgid "Broker Endpoint"
-msgstr ""
-
-#: superset/views.py:522
-msgid ""
-"These parameters are generated dynamically when clicking the save or "
-"overwrite button in the explore view. This JSON object is exposed here "
-"for reference and for power users who may want to alter specific "
-"parameters."
-msgstr "当单击“保存”或“覆盖”按钮时，这些参数会在视图中动态生成。高级用户可以在这里改变特定的参数。"
-
-#: superset/views.py:527
-msgid "Duration (in seconds) of the caching timeout for this slice."
-msgstr "切片数据过期时间(秒)"
-
-#: superset/templates/superset/welcome.html:26 superset/views.py:535
-msgid "Dashboards"
-msgstr "看板"
-
-#: superset/views.py:538
-msgid "Last Modified"
-msgstr "最后修改"
-
-#: superset/views.py:539 superset/views.py:609
-msgid "Owners"
-msgstr "所有者"
-
-#: superset/views.py:540
-msgid "Parameters"
-msgstr "参数"
-
-#: superset/views.py:541 superset/views.py:569
-msgid "Slice"
-msgstr "切片"
-
-#: superset/views.py:542
-msgid "Name"
-msgstr "名字"
-
-#: superset/views.py:544 superset/views.py:570
-msgid "Visualization Type"
-msgstr "图表类型"
-
-#: superset/views.py:586
-msgid ""
-"This json object describes the positioning of the widgets in the "
-"dashboard. It is dynamically generated when adjusting the widgets size "
-"and positions by using drag & drop in the dashboard view"
-msgstr "这个JSON对象描述了部件在看板中的位置。它是动态生成的，可以通过拖放，在看板中调整整部件的大小和位置。"
-
-#: superset/views.py:591
-msgid ""
-"The css for individual dashboards can be altered here, or in the "
-"dashboard view where changes are immediately visible"
-msgstr "可以在这里或者在看板视图修改单个看板的CSS样式"
-
-#: superset/views.py:595
-msgid "To get a readable URL for your dashboard"
-msgstr "为看板生成一个可读的URL"
-
-#: superset/views.py:596
-msgid ""
-"This JSON object is generated dynamically when clicking the save or "
-"overwrite button in the dashboard view. It is exposed here for reference "
-"and for power users who may want to alter specific parameters."
-msgstr "当在看板视图中单击“保存”或“覆盖”按钮时，这些参数会在视图中动态生成。高级用户可以在这里改变特定的参数。"
-
-#: superset/views.py:601
-msgid "Owners is a list of users who can alter the dashboard."
-msgstr "“所有者”是一组可以修改看板的用户列表"
-
-#: superset/views.py:605
-msgid "Dashboard"
-msgstr "看板"
-
-#: superset/views.py:606
-msgid "Title"
-msgstr "标题"
-
-#: superset/views.py:607
-msgid "Slug"
-msgstr ""
-
-#: superset/views.py:608
-msgid "Slices"
-msgstr "切片"
-
-#: superset/views.py:611
-msgid "Modified"
-msgstr "已修改"
-
-#: superset/views.py:612
-msgid "Position JSON"
-msgstr "位置参数"
-
-#: superset/views.py:613
-msgid "CSS"
-msgstr ""
-
-#: superset/views.py:614
-msgid "JSON Metadata"
-msgstr "JSON模板"
-
-#: superset/views.py:615
-msgid "Underlying Tables"
-msgstr "底层表"
-
-#: superset/views.py:653
-msgid "User"
-msgstr "用户"
-
-#: superset/views.py:654
-msgid "Action"
-msgstr "操作"
-
-#: superset/views.py:655
-msgid "dttm"
-msgstr "DTTM"
-
-#: superset/views.py:683
+#: caravel/views.py:612 caravel/views.py:1049
 msgid "Timezone offset (in hours) for this datasource"
 msgstr "数据源的时差(单位：小时)"
 
-#: superset/views.py:689
+#: caravel/views.py:613
+msgid "Name of the table that exists in the source database"
+msgstr "数据库资源中存在的表"
+
+#: caravel/views.py:615
+msgid "Schema, as used only in some databases like Postgres, Redshift and DB2"
+msgstr "Schema(模式),只能在Postgres, Redshift and DB2中使用"
+
+#: caravel/views.py:619 caravel/views.py:1051
+msgid "Supports <a href='https://daringfireball.net/projects/markdown/'>markdown</a>"
+msgstr "支持<a href='https://daringfireball.net/projects/markdown/'>markdown</a>"
+
+#: caravel/views.py:621
+msgid "This fields acts a Superset view, meaning that Superset will run a query against this string as a subquery."
+msgstr "将不对这个字符进行子查询"
+
+#: caravel/views.py:629
+msgid "Changed By"
+msgstr "修改人"
+
+#: caravel/views.py:632 caravel/views.py:1060
+msgid "Is Featured"
+msgstr "是否突出"
+
+#: caravel/views.py:633
+msgid "Schema"
+msgstr "模式"
+
+#: caravel/views.py:634 caravel/views.py:1062
+msgid "Default Endpoint"
+msgstr "默认端点"
+
+#: caravel/views.py:635
+msgid "Offset"
+msgstr "偏移"
+
+#: caravel/views.py:662
+msgid "Table [{}] could not be found, please double check your database connection, schema, and table name"
+msgstr "找不到表[{}],请检查数据库连接、模式、表名是否有误"
+
+#: caravel/views.py:667
+msgid "The table was created. As part of this two phase configuration process, you should now click the edit button by the new table to configure it."
+msgstr "表完成创建。你现在需要点击新表的编辑按钮进行设置"
+
+#: caravel/views.py:698
+msgid "Tables"
+msgstr "表"
+
+#: caravel/views.py:714 caravel/views.py:1018
+msgid "User"
+msgstr "用户"
+
+#: caravel/views.py:715
+msgid "User Roles"
+msgstr "用户角色"
+
+#: caravel/views.py:716
+msgid "Database URL"
+msgstr "数据库URL"
+
+#: caravel/views.py:718
+msgid "Roles to grant"
+msgstr "角色授权"
+
+#: caravel/views.py:719
+msgid "Created On"
+msgstr "创建于"
+
+#: caravel/views.py:725
+msgid "Access requests"
+msgstr "访问请求"
+
+#: caravel/views.py:727 caravel/views.py:1029
+msgid "Security"
+msgstr "安全"
+
+#: caravel/views.py:741 caravel/views.py:1057
+msgid "Cluster"
+msgstr "集群"
+
+#: caravel/views.py:742
+msgid "Coordinator Host"
+msgstr "协调器主机"
+
+#: caravel/views.py:743
+msgid "Coordinator Port"
+msgstr "协调器端口"
+
+#: caravel/views.py:744
+msgid "Coordinator Endpoint"
+msgstr "协调器终端"
+
+#: caravel/views.py:745
+msgid "Broker Host"
+msgstr "代理主机"
+
+#: caravel/views.py:746
+msgid "Broker Port"
+msgstr "代理端口"
+
+#: caravel/views.py:747
+msgid "Broker Endpoint"
+msgstr "代理终端"
+
+#: caravel/views.py:761
+msgid "Druid Clusters"
+msgstr "Druid簇"
+
+#: caravel/views.py:782
+msgid "The content here can be displayed as widget headers in the dashboard view. Supports <a href='https://daringfireball.net/projects/markdown/'>markdown</a>"
+msgstr "这里的内容能作为窗口小部件显示在看板视图，支持<a href='https://daringfireball.net/projects/markdown/'>markdown</a>"
+
+#: caravel/views.py:786
+msgid "These parameters are generated dynamically when clicking the save or overwrite button in the explore view. This JSON object is exposed here for reference and for power users who may want to alter specific parameters."
+msgstr "当单击“保存”或“覆盖”按钮时，这些参数会在视图中动态生成。高级用户可以在这里改变特定的参数。"
+
+#: caravel/views.py:791
+msgid "Duration (in seconds) of the caching timeout for this slice."
+msgstr "切片数据过期时间(秒)"
+
+#: caravel/views.py:799 caravel/views.py:997
+msgid "Dashboards"
+msgstr "看板"
+
+#: caravel/views.py:802
+msgid "Last Modified"
+msgstr "最后修改"
+
+#: caravel/views.py:803 caravel/views.py:927
+msgid "Owners"
+msgstr "所有者"
+
+#: caravel/views.py:804
+msgid "Parameters"
+msgstr "参数"
+
+#: caravel/views.py:805 caravel/views.py:872
+msgid "Slice"
+msgstr "切片"
+
+#: caravel/views.py:806
+msgid "Name"
+msgstr "名字"
+
+#: caravel/views.py:808
+msgid "Visualization Type"
+msgstr "图表类型"
+
+#: caravel/views.py:851
+msgid "Click on a {} link to create a Slice"
+msgstr "点击{}创建一个切片"
+
+#: caravel/views.py:860 caravel/views.py:926
+msgid "Slices"
+msgstr "切片"
+
+#: caravel/views.py:896
+msgid "This json object describes the positioning of the widgets in the dashboard. It is dynamically generated when adjusting the widgets size and positions by using drag & drop in the dashboard view"
+msgstr "这个JSON对象描述了部件在看板中的位置。它是动态生成的，可以通过拖放，在看板中调整整部件的大小和位置。"
+
+#: caravel/views.py:901
+msgid "The css for individual dashboards can be altered here, or in the dashboard view where changes are immediately visible"
+msgstr "可以在这里或者在看板视图修改单个看板的CSS样式"
+
+#: caravel/views.py:905
+msgid "To get a readable URL for your dashboard"
+msgstr "为看板生成一个可读的URL"
+
+#: caravel/views.py:906
+msgid "This JSON object is generated dynamically when clicking the save or overwrite button in the dashboard view. It is exposed here for reference and for power users who may want to alter specific parameters."
+msgstr "当在看板视图中单击“保存”或“覆盖”按钮时，这些参数会在视图中动态生成。高级用户可以在这里改变特定的参数。"
+
+#: caravel/views.py:911
+msgid "Owners is a list of users who can alter the dashboard."
+msgstr "“所有者”是一组可以修改看板的用户列表"
+
+#: caravel/views.py:923
+msgid "Dashboard"
+msgstr "看板"
+
+#: caravel/views.py:924
+msgid "Title"
+msgstr "标题"
+
+#: caravel/views.py:925
+msgid "Slug"
+msgstr ""
+
+#: caravel/views.py:929
+msgid "Modified"
+msgstr "已修改"
+
+#: caravel/views.py:930
+msgid "Position JSON"
+msgstr "位置参数"
+
+#: caravel/views.py:931
+msgid "CSS"
+msgstr ""
+
+#: caravel/views.py:932
+msgid "JSON Metadata"
+msgstr "JSON模板"
+
+#: caravel/views.py:933
+msgid "Underlying Tables"
+msgstr "底层表"
+
+#: caravel/views.py:1019
+msgid "Action"
+msgstr "操作"
+
+#: caravel/views.py:1020
+msgid "dttm"
+msgstr "DTTM"
+
+#: caravel/views.py:1027
+msgid "Action Log"
+msgstr "行为日志"
+
+#: caravel/views.py:1056
 msgid "Data Source"
 msgstr "数据源"
 
-#: superset/views.py:692
+#: caravel/views.py:1059
 msgid "Owner"
 msgstr "所有者"
 
-#: superset/views.py:694
+#: caravel/views.py:1061
 msgid "Is Hidden"
 msgstr "隐藏"
 
-#: superset/views.py:696
+#: caravel/views.py:1063
 msgid "Time Offset"
 msgstr "时间偏移"
 
-#: superset/views.py:1176
-msgid "This view requires the `all_datasource_access` permission"
-msgstr "本视图需要`访问所有数据`的权限"
+#: caravel/views.py:1091
+msgid "Druid Datasources"
+msgstr "Druid数据源"
 
-#: superset/views.py:1249
+#: caravel/views.py:1225
+msgid "Access was requested"
+msgstr "已请求访问"
+
+#: caravel/views.py:1276
+#, python-format
+msgid "%(user)s was granted the role %(role)s that gives access to the %(datasource)s"
+msgstr "%(user)s 被授予了 %(role)s 角色，可以访问数据源 %(datasource)s "
+
+#: caravel/views.py:1287
+#, python-format
+msgid "Role %(r)s was extended to provide the access to the datasource %(ds)s"
+msgstr " %(r)s 角色可以访问 %(ds)s 数据源 "
+
+#: caravel/views.py:1292
+msgid "You have no permission to approve this request"
+msgstr "你无权利批准这个请求"
+
+#: caravel/views.py:1517
+msgid "Dashboard [{}] just got created and slice [{}] was added to it"
+msgstr "看板[{}] 已经定义同时切片 [{}] 已经加载在里面"
+
+#: caravel/views.py:1533
+msgid "Slice [{}] has been saved"
+msgstr "切片 [{}] 已经保存"
+
+#: caravel/views.py:1541
+msgid "You cannot overwrite [{}]"
+msgstr "你不能重写[{}]"
+
+#: caravel/views.py:1546
+msgid "Slice [{}] has been overwritten"
+msgstr "切片 [{}]已经被重写"
+
+#: caravel/views.py:1678
+msgid "Connection failed!\n"
+"\n"
+"The error message returned was:\n"
+"{}"
+msgstr "连接出错\n"
+"\n"
+"错误信息如下:\n"
+"{}"
+
+#: caravel/views.py:1694
+msgid "Malformed request. slice_id or table_name and db_name arguments are expected"
+msgstr "Malformed请求需要 slice_id , table_name 和 db_name"
+
+#: caravel/views.py:1700
+#, python-format
+msgid "Slice %(id)s not found"
+msgstr "找不到切片 %(id)s"
+
+#: caravel/views.py:1711
+#, python-format
+msgid "Table %(t)s wasn't found in the database %(d)s"
+msgstr "数据库 %(d)s 中找不到表  %(t)s"
+
+#: caravel/views.py:1835
+#, python-format
+msgid "Can't find User '%(name)s', please ask your admin to create one."
+msgstr "找不到用户  '%(name)s', 请找管理员创建一个"
+
+#: caravel/views.py:1842
+#, python-format
+msgid "Can't find DruidCluster with cluster_name = '%(name)s'"
+msgstr "无法找到cluster_name = '%(name)s' 的Druid簇"
+
+#: caravel/views.py:2062
+msgid "Data could not be retrived. You may want to re-run the query."
+msgstr "数据无法获取，你需要重新查询"
+
+#: caravel/views.py:2083
+msgid "Database with id {} is missing."
+msgstr "找不到id为{}的数据库"
+
+#: caravel/views.py:2126
+msgid "The query exceeded the {SQLLAB_TIMEOUT} seconds timeout. You may want to run your query as a `CREATE TABLE AS` to prevent timeouts."
+msgstr "查询超时{SQLLAB_TIMEOUT}。你可能需要执行`CREATE TABLE AS`来防止超时"
+
+#: caravel/views.py:2229
+msgid "Please login to access the queries."
+msgstr "请登录后再查询"
+
+#: caravel/views.py:2311
+msgid "Error while processing cluster '{}'\n"
+"{}"
+msgstr "处理簇时出错'{}'\n"
+"{}"
+
+#: caravel/views.py:2349
 msgid "Refresh Druid Metadata"
 msgstr "刷新Druid元数据"
 
-#: superset/viz.py:367
+#: caravel/views.py:2371
+msgid "CSS Templates"
+msgstr "CSS模板"
+
+#: caravel/views.py:2381
+msgid "SQL Editor"
+msgstr "SQL编辑"
+
+#: caravel/views.py:2388
+msgid "Query Search"
+msgstr "搜索查询结果"
+
+#: caravel/viz.py:401
 msgid "Table View"
 msgstr "表视图"
 
-#: superset/viz.py:370
+#: caravel/viz.py:404
 msgid "GROUP BY"
 msgstr "分组"
 
-#: superset/viz.py:371
+#: caravel/viz.py:405
 msgid "Use this section if you want a query that aggregates"
 msgstr "进行聚合查询"
 
-#: superset/viz.py:374
+#: caravel/viz.py:408
 msgid "NOT GROUPED BY"
 msgstr "不分组"
 
-#: superset/viz.py:375
+#: caravel/viz.py:409
 msgid "Use this section if you want to query atomic rows"
 msgstr "进行非聚合查询"
 
-#: superset/viz.py:378
+#: caravel/viz.py:412
 msgid "Options"
 msgstr "选项"
 
-#: superset/viz.py:429
+#: caravel/viz.py:463
 msgid "Pivot Table"
 msgstr "透视表"
 
-#: superset/viz.py:491
+#: caravel/viz.py:525
 msgid "Markup"
 msgstr "标记"
 
-#: superset/viz.py:519
+#: caravel/viz.py:549
+msgid "Separator"
+msgstr "分隔符"
+
+#: caravel/viz.py:572
 msgid "Word Cloud"
 msgstr "词汇云"
 
-#: superset/viz.py:551
+#: caravel/viz.py:604
 msgid "Treemap"
 msgstr "树状图"
 
-#: superset/viz.py:561 superset/viz.py:676 superset/viz.py:783 superset/viz.py:948
-#: superset/viz.py:1093 superset/viz.py:1122 superset/viz.py:1177
-#: superset/viz.py:1682
+#: caravel/viz.py:614 caravel/viz.py:729 caravel/viz.py:836 caravel/viz.py:1001
+#: caravel/viz.py:1154 caravel/viz.py:1183 caravel/viz.py:1308
+#: caravel/viz.py:1818
 msgid "Chart Options"
 msgstr "图表选项"
 
-#: superset/viz.py:595
-msgid "Calendar Heatmap"
-msgstr "时间热力图"
+#: caravel/viz.py:648
+msgid "Calender Heatmap"
+msgstr "日历热图"
 
-#: superset/viz.py:666
+#: caravel/viz.py:719
 msgid "Box Plot"
 msgstr "箱线图"
 
-#: superset/viz.py:773
+#: caravel/viz.py:826
 msgid "Bubble Chart"
 msgstr "气泡图"
 
-#: superset/viz.py:842
+#: caravel/viz.py:895
 msgid "Big Number with Trendline"
 msgstr "数字和趋势线"
 
-#: superset/viz.py:892
+#: caravel/viz.py:945
 msgid "Big Number"
 msgstr "数字"
 
-#: superset/viz.py:938
+#: caravel/viz.py:991
 msgid "Time Series - Line Chart"
 msgstr "时间序列-折线图"
 
-#: superset/viz.py:958
+#: caravel/viz.py:1012
 msgid "Advanced Analytics"
 msgstr "高级分析"
 
-#: superset/viz.py:959
-msgid ""
-"This section contains options that allow for advanced analytical post "
-"processing of query results"
+#: caravel/viz.py:1013
+msgid "This section contains options that allow for advanced analytical post processing of query results"
 msgstr "使用高级分析选项"
 
-#: superset/viz.py:1091
+#: caravel/viz.py:1152
 msgid "Time Series - Bar Chart"
 msgstr "时间序列-柱状图"
 
-#: superset/viz.py:1111
+#: caravel/viz.py:1172
 msgid "Time Series - Percent Change"
 msgstr "时间序列-百分比变化"
 
-#: superset/viz.py:1119
+#: caravel/viz.py:1180
 msgid "Time Series - Stacked"
 msgstr "时间序列-堆积图"
 
-#: superset/viz.py:1138
+#: caravel/viz.py:1199
 msgid "Distribution - NVD3 - Pie Chart"
 msgstr "分布-饼图"
 
-#: superset/viz.py:1174
+#: caravel/viz.py:1237
+msgid "Histogram"
+msgstr "柱状图"
+
+#: caravel/viz.py:1246
+msgid "Histogram Options"
+msgstr "柱状图选项"
+
+#: caravel/viz.py:1254
+msgid "Numeric Column"
+msgstr "列值"
+
+#: caravel/viz.py:1255
+msgid "Select the numeric column to draw the histogram"
+msgstr "选择柱状图的列值"
+
+#: caravel/viz.py:1258
+msgid "No of Bins"
+msgstr "没有工具"
+
+#: caravel/viz.py:1259
+msgid "Select number of bins for the histogram"
+msgstr "为柱状图选择工具"
+
+#: caravel/viz.py:1305
 msgid "Distribution - Bar Chart"
 msgstr "分布-柱状图"
 
-#: superset/viz.py:1195
+#: caravel/viz.py:1326
 msgid "Breakdowns"
 msgstr "拆分"
 
-#: superset/viz.py:1196
+#: caravel/viz.py:1327
 msgid "Defines how each series is broken down"
 msgstr "项目的拆分方式"
 
-#: superset/viz.py:1261
+#: caravel/viz.py:1392
 msgid "Sunburst"
 msgstr "环状层次图"
 
-#: superset/viz.py:1276
+#: caravel/viz.py:1407
 msgid "Primary Metric"
 msgstr "主指标"
 
-#: superset/viz.py:1277
+#: caravel/viz.py:1408
 msgid "The primary metric is used to define the arc segment sizes"
 msgstr "主要指标用来定义的弧段尺寸"
 
-#: superset/viz.py:1282
+#: caravel/viz.py:1413
 msgid "Secondary Metric"
 msgstr "次指标"
 
-#: superset/viz.py:1283
-msgid ""
-"This secondary metric is used to define the color as a ratio against the "
-"primary metric. If the two metrics match, color is mapped level groups"
+#: caravel/viz.py:1414
+msgid "This secondary metric is used to define the color as a ratio against the primary metric. If the two metrics match, color is mapped level groups"
 msgstr "次指标用于定义相对主指标的颜色"
 
-#: superset/viz.py:1289
+#: caravel/viz.py:1420
 msgid "Hierarchy"
 msgstr "层次"
 
-#: superset/viz.py:1290
+#: caravel/viz.py:1421
 msgid "This defines the level of the hierarchy"
 msgstr "定义层次"
 
-#: superset/viz.py:1327
+#: caravel/viz.py:1457
 msgid "Sankey"
 msgstr "蛇形图"
 
-#: superset/viz.py:1340 superset/viz.py:1410
+#: caravel/viz.py:1470 caravel/viz.py:1540
 msgid "Source / Target"
 msgstr "源/目标"
 
-#: superset/viz.py:1341 superset/viz.py:1411
+#: caravel/viz.py:1471 caravel/viz.py:1541
 msgid "Choose a source and a target"
 msgstr "选择源和目标"
 
-#: superset/viz.py:1391
+#: caravel/viz.py:1521
 msgid "Directed Force Layout"
 msgstr "有向图"
 
-#: superset/viz.py:1402
+#: caravel/viz.py:1532
 msgid "Force Layout"
 msgstr "有向图"
 
-#: superset/viz.py:1433
+#: caravel/viz.py:1563
 msgid "World Map"
 msgstr "世界地图"
 
-#: superset/viz.py:1444
+#: caravel/viz.py:1574
 msgid "Bubbles"
 msgstr "气泡"
 
-#: superset/viz.py:1453
+#: caravel/viz.py:1583
 msgid "Country Field"
 msgstr "国家"
 
-#: superset/viz.py:1454
+#: caravel/viz.py:1584
 msgid "3 letter code of the country"
 msgstr "3位国家码"
 
-#: superset/viz.py:1457
+#: caravel/viz.py:1587
 msgid "Metric for color"
 msgstr "色彩度量项"
 
-#: superset/viz.py:1458
+#: caravel/viz.py:1588
 msgid "Metric that defines the color of the country"
 msgstr "国家颜色表示的统计项"
 
-#: superset/viz.py:1461
+#: caravel/viz.py:1591
 msgid "Bubble size"
 msgstr "气泡大小"
 
-#: superset/viz.py:1462
+#: caravel/viz.py:1592
 msgid "Metric that defines the size of the bubble"
 msgstr "气泡大小表示的度量项"
 
-#: superset/templates/superset/explore.html:147 superset/viz.py:1507
+#: caravel/viz.py:1642
 msgid "Filters"
 msgstr "筛选"
 
-#: superset/viz.py:1519
+#: caravel/viz.py:1655
 msgid "Filter fields"
 msgstr "筛选条件"
 
-#: superset/viz.py:1520
+#: caravel/viz.py:1656
 msgid "The fields you want to filter on"
 msgstr "筛选字段"
 
-#: superset/viz.py:1555
+#: caravel/viz.py:1691
 msgid "iFrame"
-msgstr ""
+msgstr "框架"
 
-#: superset/viz.py:1573
+#: caravel/viz.py:1709
 msgid "Parallel Coordinates"
 msgstr "平行坐标"
 
-#: superset/viz.py:1609
+#: caravel/viz.py:1745
 msgid "Heatmap"
 msgstr "热力图"
 
-#: superset/viz.py:1622
+#: caravel/viz.py:1758
 msgid "Heatmap Options"
 msgstr "热力图选项"
 
-#: superset/viz.py:1677
+#: caravel/viz.py:1813
 msgid "Horizon Charts"
 msgstr "水平图"
 
-#: superset/viz.py:1693
+#: caravel/viz.py:1829
 msgid "Mapbox"
 msgstr "箱图"
 
-#: superset/viz.py:1707
+#: caravel/viz.py:1843
 msgid "Points"
 msgstr "点"
 
-#: superset/viz.py:1713
+#: caravel/viz.py:1849
 msgid "Labelling"
 msgstr "标记"
 
-#: superset/viz.py:1719
+#: caravel/viz.py:1855
 msgid "Visual Tweaks"
-msgstr ""
+msgstr "微调"
 
-#: superset/viz.py:1726
+#: caravel/viz.py:1862
 msgid "Viewport"
-msgstr ""
+msgstr "视口"
 
-#: superset/viz.py:1736
+#: caravel/viz.py:1872
 msgid "Longitude"
 msgstr "经度"
 
-#: superset/viz.py:1737
+#: caravel/viz.py:1873
 msgid "Column containing longitude data"
 msgstr "表示经度的列"
 
-#: superset/viz.py:1740
+#: caravel/viz.py:1876
 msgid "Latitude"
 msgstr "纬度"
 
-#: superset/viz.py:1741
+#: caravel/viz.py:1877
 msgid "Column containing latitude data"
 msgstr "表示纬度的列"
 
-#: superset/viz.py:1744
+#: caravel/viz.py:1880
 msgid "Cluster label aggregator"
-msgstr ""
+msgstr "簇标签聚合器"
 
-#: superset/viz.py:1745
-msgid ""
-"Aggregate function applied to the list of points in each cluster to "
-"produce the cluster label."
+#: caravel/viz.py:1881
+msgid "Aggregate function applied to the list of points in each cluster to produce the cluster label."
 msgstr "聚合函数用于集群标签"
 
-#: superset/viz.py:1750
+#: caravel/viz.py:1886
 msgid "Tooltip"
 msgstr "提示"
 
-#: superset/viz.py:1751
+#: caravel/viz.py:1887
 msgid "Show a tooltip when hovering over points and clusters describing the label"
 msgstr "鼠标放在集群上时显示的提示信息"
 
-#: superset/viz.py:1756
-msgid ""
-"One or many fields to group by. If grouping, latitude and longitude "
-"columns must be present."
+#: caravel/viz.py:1892
+msgid "One or many fields to group by. If grouping, latitude and longitude columns must be present."
 msgstr "按照一个或多个字段分组。必须指定经度和纬度。"
 
-#: superset/templates/appbuilder/navbar_right.html:36
-msgid "Profile"
-msgstr "策略"
+#: caravel/templates/appbuilder/navbar.html:24
+msgid "Documentation"
+msgstr "文献资料"
 
-#: superset/templates/appbuilder/navbar_right.html:37
+#: caravel/templates/appbuilder/navbar_right.html:36
+msgid "Profile"
+msgstr "信息"
+
+#: caravel/templates/appbuilder/navbar_right.html:37
 msgid "Logout"
 msgstr "退出"
 
-#: superset/templates/appbuilder/navbar_right.html:42
+#: caravel/templates/appbuilder/navbar_right.html:42
 msgid "Login"
 msgstr "登录"
 
-#: superset/templates/superset/explore.html:34
-#: superset/templates/superset/explore.html:241
-msgid "Query"
-msgstr "查询"
+#: caravel/templates/caravel/request_access.html:2
+msgid "No Access!"
+msgstr "不能访问!"
 
-#: superset/templates/superset/explore.html:43
-#: superset/templates/superset/explore.html:306
-msgid "Save"
-msgstr ""
+#: caravel/templates/caravel/request_access.html:7
+#, python-format
+msgid "You do not have permissions to access the datasource(s): %(name)s."
+msgstr "你没有权利访问数据库: %(name)s."
 
-#: superset/templates/superset/explore.html:72
-msgid "Force refresh"
-msgstr "强制刷新"
+#: caravel/templates/caravel/request_access.html:13
+msgid "Request Permissions"
+msgstr "请求许可"
 
-#: superset/templates/superset/explore.html:77
-msgid "Short URL"
-msgstr "短链接"
-
-#: superset/templates/superset/explore.html:79
-msgid "Generate an embeddable iframe"
-msgstr "生成内嵌iframe"
-
-#: superset/templates/superset/explore.html:82
-msgid "Export to .json"
-msgstr "导出为JSON"
-
-#: superset/templates/superset/explore.html:86
-msgid "Export to .csv format"
-msgstr "导出为CVS"
-
-#: superset/templates/superset/explore.html:92
-msgid "Query timer"
-msgstr "查询时间"
-
-#: superset/templates/superset/explore.html:94
-msgid "0 sec"
-msgstr "0秒"
-
-#: superset/templates/superset/explore.html:100
-msgid "View database query"
-msgstr "查询语句"
-
-#: superset/templates/superset/explore.html:101
-msgid "query"
-msgstr "查询"
-
-#: superset/templates/superset/explore.html:150
-msgid "Filters are defined using comma delimited strings as in 'US,FR,Other'"
-msgstr "使用逗号分隔多个过滤条件，如'US,FR,Other'"
-
-#: superset/templates/superset/explore.html:168
-msgid "Add filter"
-msgstr "增加过滤条件"
-
-#: superset/templates/superset/explore.html:247
-#: superset/templates/superset/explore.html:265
-msgid "Close"
-msgstr "关闭"
-
-#: superset/templates/superset/explore.html:259
-msgid "Datasource Description"
-msgstr "数据源描述"
-
-#: superset/templates/superset/explore.html:277
-msgid "Save a Slice"
-msgstr ""
-
-#: superset/templates/superset/explore.html:309
-msgid "Save & go to dashboard"
-msgstr ""
-
-#: superset/templates/superset/explore.html:312
+#: caravel/templates/caravel/request_access.html:16
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
-#: superset/templates/superset/sql.html:12
-msgid "Run!"
-msgstr "执行"
-
-#: superset/templates/superset/sql.html:13
-msgid "Create View"
-msgstr "创建视图"
-
-#: superset/templates/superset/welcome.html:8
-#: superset/templates/superset/welcome.html:14
-msgid "Welcome!"
-msgstr "欢迎！"
-
-#: superset/templates/superset/models/database/macros.html:4
+#: caravel/templates/caravel/models/database/macros.html:4
 msgid "Test Connection"
 msgstr "测试连接"
 
-#~ msgid "Databases"
+#~ msgid ""
 #~ msgstr ""
 
-#~ msgid "Sources"
+#~ msgid "SQL link"
+#~ msgstr "SQL查询"
+
+#~ msgid "Calendar Heatmap"
+#~ msgstr "时间热力图"
+
+#~ msgid "Query"
+#~ msgstr "查询"
+
+#~ msgid "Save"
 #~ msgstr ""
 
-#~ msgid "Tables"
-#~ msgstr ""
+#~ msgid "Force refresh"
+#~ msgstr "强制刷新"
 
-#~ msgid "Druid Clusters"
-#~ msgstr ""
+#~ msgid "Short URL"
+#~ msgstr "短链接"
 
-#~ msgid "Action Log"
-#~ msgstr ""
+#~ msgid "Generate an embeddable iframe"
+#~ msgstr "生成内嵌iframe"
 
-#~ msgid "Security"
-#~ msgstr ""
+#~ msgid "Export to .json"
+#~ msgstr "导出为JSON"
 
-#~ msgid "Druid Datasources"
-#~ msgstr ""
+#~ msgid "Export to .csv format"
+#~ msgstr "导出为CVS"
 
-#~ msgid "CSS Templates"
-#~ msgstr ""
+#~ msgid "Query timer"
+#~ msgstr "查询时间"
 
-#~ msgid "Documentation"
-#~ msgstr ""
+#~ msgid "0 sec"
+#~ msgstr "0秒"
+
+#~ msgid "View database query"
+#~ msgstr "查询语句"
+
+#~ msgid "query"
+#~ msgstr "查询"
+
+#~ msgid "Filters are defined using comma delimited strings as in 'US,FR,Other'"
+#~ msgstr "使用逗号分隔多个过滤条件，如'US,FR,Other'"
+
+#~ msgid "Add filter"
+#~ msgstr "增加过滤条件"
+
+#~ msgid "Close"
+#~ msgstr "关闭"
+
+#~ msgid "Datasource Description"
+#~ msgstr "数据源描述"
+
+#~ msgid "Save a Slice"
+#~ msgstr "保存切片"
+
+#~ msgid "Save & go to dashboard"
+#~ msgstr "保存并转到看板"
+
+#~ msgid "Run!"
+#~ msgstr "执行"
+
+#~ msgid "Create View"
+#~ msgstr "创建视图"
+
+#~ msgid "Welcome!"
+#~ msgstr "欢迎！"
+
+#~ msgid "Untitled Query"
+#~ msgstr "未命名"
+
+#~ msgid "Run a query to display results here"
+#~ msgstr "查询结果将显示在这里"
+
+#~ msgid "Results"
+#~ msgstr "查询结果"
+
+#~ msgid "Query History"
+#~ msgstr "查询历史"
+
+#~ msgid "Select a database"
+#~ msgstr "选择一个数据库"
+
+#~ msgid "Select a schema"
+#~ msgstr "选择一个模式"
+
+#~ msgid "Add a table"
+#~ msgstr "选择一个表"
 
 #~ msgid "Standalone version, use to embed anywhere"
-#~ msgstr ""
+#~ msgstr "单独的版本,用于嵌入任何位置"
 

@@ -26,6 +26,7 @@ from flask_appbuilder.widgets import ListWidget
 from flask_babel import gettext as __
 from flask_babel import lazy_gettext as _
 from flask_appbuilder.models.sqla.filters import BaseFilter
+from flask import url_for
 
 from sqlalchemy import create_engine
 from werkzeug.datastructures import ImmutableMultiDict
@@ -70,27 +71,27 @@ class ListWidgetWithCheckboxes(ListWidget):
     template = 'superset/fab_overrides/list_with_checkboxes.html'
 
 
-ALL_DATASOURCE_ACCESS_ERR = __(
+ALL_DATASOURCE_ACCESS_ERR = _(
     "This endpoint requires the `all_datasource_access` permission")
-DATASOURCE_MISSING_ERR = __("The datasource seems to have been deleted")
-ACCESS_REQUEST_MISSING_ERR = __(
+DATASOURCE_MISSING_ERR = _("The datasource seems to have been deleted")
+ACCESS_REQUEST_MISSING_ERR = _(
     "The access requests seem to have been deleted")
-USER_MISSING_ERR = __("The user seems to have been deleted")
-DATASOURCE_ACCESS_ERR = __("You don't have access to this datasource")
+USER_MISSING_ERR = _("The user seems to have been deleted")
+DATASOURCE_ACCESS_ERR = _("You don't have access to this datasource")
 
 
 def get_database_access_error_msg(database_name):
-    return __("This view requires the database %(name)s or "
+    return _("This view requires the database %(name)s or "
               "`all_datasource_access` permission", name=database_name)
 
 
 def get_datasource_access_error_msg(datasource_name):
-    return __("This endpoint requires the datasource %(name)s, database or "
+    return _("This endpoint requires the datasource %(name)s, database or "
               "`all_datasource_access` permission", name=datasource_name)
 
 
 def get_datasource_exist_error_mgs(full_name):
-    return __("Datasource %(name)s already exists", name=full_name)
+    return _("Datasource %(name)s already exists", name=full_name)
 
 
 def get_error_msg():
@@ -99,8 +100,8 @@ def get_error_msg():
     else:
         error_msg = "FATAL ERROR \n"
         error_msg += (
-            "Stacktrace is hidden. Change the SHOW_STACKTRACE "
-            "configuration setting to enable it")
+            _("Stacktrace is hidden. Change the SHOW_STACKTRACE "
+            "configuration setting to enable it"))
     return error_msg
 
 
@@ -145,7 +146,7 @@ def check_ownership(obj, raise_if_false=True):
         return False
 
     security_exception = utils.SupersetSecurityException(
-              "You don't have the rights to alter [{}]".format(obj))
+              _("You don't have the rights to alter [{}]".format(obj)))
 
     if g.user.is_anonymous():
         if raise_if_false:
@@ -313,26 +314,26 @@ class TableColumnInlineView(CompactCRUDMixin, SupersetModelView):  # noqa
             "[Time Granularity] option, column has to be DATETIME or "
             "DATETIME-like")),
         'expression': utils.markdown(
-            "a valid SQL expression as supported by the underlying backend. "
-            "Example: `substr(name, 1, 1)`", True),
+            _("a valid SQL expression as supported by the underlying backend. "
+            "Example: `substr(name, 1, 1)`"), True),
         'python_date_format': utils.markdown(Markup(
-            "The pattern of timestamp format, use "
+            _("The pattern of timestamp format, use "
             "<a href='https://docs.python.org/2/library/"
             "datetime.html#strftime-strptime-behavior'>"
             "python datetime string pattern</a> "
             "expression. If time is stored in epoch "
             "format, put `epoch_s` or `epoch_ms`. Leave `Database Expression` "
             "below empty if timestamp is stored in "
-            "String or Integer(epoch) type"), True),
+            "String or Integer(epoch) type")), True),
         'database_expression': utils.markdown(
-            "The database expression to cast internal datetime "
+            _("The database expression to cast internal datetime "
             "constants to database date/timestamp type according to the DBAPI. "
             "The expression should follow the pattern of "
             "%Y-%m-%d %H:%M:%S, based on different DBAPI. "
             "The string should be a python string formatter \n"
             "`Ex: TO_DATE('{}', 'YYYY-MM-DD HH24:MI:SS')` for Oracle"
             "Superset uses default expression based on DB URI if this "
-            "field is blank.", True),
+            "field is blank."), True),
     }
     label_columns = {
         'column_name': _("Column"),
@@ -377,12 +378,12 @@ class DruidColumnInlineView(CompactCRUDMixin, SupersetModelView):  # noqa
     }
     description_columns = {
         'dimension_spec_json': utils.markdown(
-            "this field can be used to specify  "
+            _("this field can be used to specify  "
             "a `dimensionSpec` as documented [here]"
             "(http://druid.io/docs/latest/querying/dimensionspecs.html). "
             "Make sure to input valid JSON and that the "
             "`outputName` matches the `column_name` defined "
-            "above.",
+            "above."),
             True),
     }
 
@@ -404,18 +405,18 @@ class SqlMetricInlineView(CompactCRUDMixin, SupersetModelView):  # noqa
         'expression', 'table', 'd3format', 'is_restricted']
     description_columns = {
         'expression': utils.markdown(
-            "a valid SQL expression as supported by the underlying backend. "
-            "Example: `count(DISTINCT userid)`", True),
+            _("a valid SQL expression as supported by the underlying backend. "
+            "Example: `count(DISTINCT userid)`"), True),
         'is_restricted': _("Whether the access to this metric is restricted "
                            "to certain roles. Only roles with the permission "
                            "'metric access on XXX (the name of this metric)' "
                            "are allowed to access this metric"),
         'd3format': utils.markdown(
-            "d3 formatting string as defined [here]"
+            _("d3 formatting string as defined [here]"
             "(https://github.com/d3/d3-format/blob/master/README.md#format). "
             "For instance, this default formatting applies in the Table "
             "visualization and allow for different metric to use different "
-            "formats", True
+            "formats"), True
         ),
     }
     add_columns = edit_columns
@@ -451,9 +452,9 @@ class DruidMetricInlineView(CompactCRUDMixin, SupersetModelView):  # noqa
     }
     description_columns = {
         'metric_type': utils.markdown(
-            "use `postagg` as the metric type if you are defining a "
+            _("use `postagg` as the metric type if you are defining a "
             "[Druid Post Aggregation]"
-            "(http://druid.io/docs/latest/querying/post-aggregations.html)",
+            "(http://druid.io/docs/latest/querying/post-aggregations.html)"),
             True),
         'is_restricted': _("Whether the access to this metric is restricted "
                            "to certain roles. Only roles with the permission "
@@ -504,11 +505,11 @@ class DatabaseView(SupersetModelView, DeleteMixin):  # noqa
     base_order = ('changed_on', 'desc')
     description_columns = {
         'sqlalchemy_uri': utils.markdown(
-            "Refer to the "
+            _("Refer to the "
             "[SqlAlchemy docs]"
             "(http://docs.sqlalchemy.org/en/rel_1_0/core/engines.html#"
             "database-urls) "
-            "for more information on how to structure your URI.", True),
+            "for more information on how to structure your URI."), True),
         'expose_in_sqllab': _("Expose this DB in SQL Lab"),
         'allow_run_sync': _(
             "Allow users to run synchronous queries, this is the default "
@@ -527,14 +528,14 @@ class DatabaseView(SupersetModelView, DeleteMixin):  # noqa
             "When allowing CREATE TABLE AS option in SQL Lab, "
             "this option forces the table to be created in this schema"),
         'extra': utils.markdown(
-            "JSON string containing extra configuration elements. "
+            _("JSON string containing extra configuration elements. "
             "The ``engine_params`` object gets unpacked into the "
             "[sqlalchemy.create_engine]"
             "(http://docs.sqlalchemy.org/en/latest/core/engines.html#"
             "sqlalchemy.create_engine) call, while the ``metadata_params`` "
             "gets unpacked into the [sqlalchemy.MetaData]"
             "(http://docs.sqlalchemy.org/en/rel_1_0/core/metadata.html"
-            "#sqlalchemy.schema.MetaData) call. ", True),
+            "#sqlalchemy.schema.MetaData) call. "), True),
     }
     label_columns = {
         'expose_in_sqllab': _("Expose in SQL Lab"),
@@ -559,21 +560,21 @@ class DatabaseView(SupersetModelView, DeleteMixin):  # noqa
 
 appbuilder.add_link(
     'Import Dashboards',
-    label=__("Import Dashboards"),
+    label=_("Import Dashboards"),
     href='/superset/import_dashboards',
     icon="fa-cloud-upload",
     category='Manage',
-    category_label=__("Manage"),
+    category_label=_("Manage"),
     category_icon='fa-wrench',)
 
 
 appbuilder.add_view(
     DatabaseView,
     "Databases",
-    label=__("Databases"),
+    label=_("Databases"),
     icon="fa-database",
     category="Sources",
-    category_label=__("Sources"),
+    category_label=_("Sources"),
     category_icon='fa-database',)
 
 
@@ -597,7 +598,7 @@ class TableModelView(SupersetModelView, DeleteMixin):  # noqa
     datamodel = SQLAInterface(models.SqlaTable)
     list_columns = [
         'link', 'database', 'is_featured',
-        'changed_by_', 'changed_on_']
+        'changed_by_', 'changed_on_','is_published']
     order_columns = [
         'link', 'database', 'is_featured', 'changed_on_']
     add_columns = ['table_name', 'database', 'schema']
@@ -615,8 +616,8 @@ class TableModelView(SupersetModelView, DeleteMixin):  # noqa
             "Schema, as used only in some databases like Postgres, Redshift "
             "and DB2"),
         'description': Markup(
-            "Supports <a href='https://daringfireball.net/projects/markdown/'>"
-            "markdown</a>"),
+            _("Supports <a href='https://daringfireball.net/projects/markdown/'>"
+            "markdown</a>")),
         'sql': _(
             "This fields acts a Superset view, meaning that Superset will "
             "run a query against this string as a subquery."
@@ -635,6 +636,9 @@ class TableModelView(SupersetModelView, DeleteMixin):  # noqa
         'cache_timeout': _("Cache Timeout"),
     }
 
+    publish_type=1 # Tell portal website when publish
+    publish_destination_url=config['TABLE_PUBLISH_URL'] # Where to publish
+
     def pre_add(self, table):
         number_of_existing_tables = db.session.query(
             sqla.func.count('*')).filter(
@@ -652,10 +656,10 @@ class TableModelView(SupersetModelView, DeleteMixin):  # noqa
         except Exception as e:
             logging.exception(e)
             raise Exception(
-                "Table [{}] could not be found, "
+                _("Table [{}] could not be found, "
                 "please double check your "
                 "database connection, schema, and "
-                "table name".format(table.table_name))
+                "table name".format(table.table_name)))
 
     def post_add(self, table):
         table.fetch_metadata()
@@ -669,12 +673,31 @@ class TableModelView(SupersetModelView, DeleteMixin):  # noqa
     def post_update(self, table):
         self.post_add(table)
 
+    @expose('/list/')
+    @has_access
+    def list(self):
+        widgets = self._list()
+        widgets['list'].template = 'superset/fab_overrides/list_with_publish.html'
+        include_columns = self.list_columns[:]
+        include_columns.remove('is_published')
+        widgets['list'].template_args['include_columns'] = include_columns
+        widgets['list'].template_args['order_columns'] = include_columns
+        return self.render_template(self.list_template,
+                                    title=self.list_title,
+                                    widgets=widgets)
+
+    @expose('/publish/<pk>')
+    @has_access
+    def publish(self, pk):
+        return utils.publish_item(self, pk)
+
+
 appbuilder.add_view(
     TableModelView,
     "Tables",
-    label=__("Tables"),
+    label=_("Tables"),
     category="Sources",
-    category_label=__("Sources"),
+    category_label=_("Sources"),
     icon='fa-table',)
 
 appbuilder.add_separator("Sources")
@@ -699,9 +722,9 @@ class AccessRequestsModelView(SupersetModelView, DeleteMixin):
 appbuilder.add_view(
     AccessRequestsModelView,
     "Access requests",
-    label=__("Access requests"),
+    label=_("Access requests"),
     category="Security",
-    category_label=__("Security"),
+    category_label=_("Security"),
     icon='fa-table',)
 
 
@@ -735,10 +758,10 @@ if config['DRUID_IS_ACTIVE']:
     appbuilder.add_view(
         DruidClusterModelView,
         name="Druid Clusters",
-        label=__("Druid Clusters"),
+        label=_("Druid Clusters"),
         icon="fa-cubes",
         category="Sources",
-        category_label=__("Sources"),
+        category_label=_("Sources"),
         category_icon='fa-database',)
 
 
@@ -749,17 +772,17 @@ class SliceModelView(SupersetModelView, DeleteMixin):  # noqa
         'datasource_link': 'Datasource',
     }
     list_columns = [
-        'slice_link', 'viz_type', 'datasource_link', 'creator', 'modified']
+        'slice_link', 'viz_type', 'datasource_link', 'creator', 'modified','is_published']
     edit_columns = [
         'slice_name', 'description', 'viz_type', 'owners', 'dashboards',
         'params', 'cache_timeout']
     base_order = ('changed_on', 'desc')
     description_columns = {
         'description': Markup(
-            "The content here can be displayed as widget headers in the "
+            _("The content here can be displayed as widget headers in the "
             "dashboard view. Supports "
             "<a href='https://daringfireball.net/projects/markdown/'>"
-            "markdown</a>"),
+            "markdown</a>")),
         'params': _(
             "These parameters are generated dynamically when clicking "
             "the save or overwrite button in the explore view. This JSON "
@@ -785,11 +808,33 @@ class SliceModelView(SupersetModelView, DeleteMixin):  # noqa
         'viz_type': _("Visualization Type"),
     }
 
+    publish_type = 2  # Tell portal website when publish
+    publish_destination_url = config['SLICE_PUBLISH_URL']  # Where to publish
+
     def pre_update(self, obj):
         check_ownership(obj)
 
     def pre_delete(self, obj):
         check_ownership(obj)
+
+    @expose('/list/')
+    @has_access
+    def list(self):
+        widgets = self._list()
+        widgets['list'].template='superset/fab_overrides/list_with_publish.html'
+        include_columns=self.list_columns[:]
+        include_columns.remove('is_published')
+        widgets['list'].template_args['include_columns']=include_columns
+        widgets['list'].template_args['order_columns']=include_columns
+        return self.render_template(self.list_template,
+                                    title=self.list_title,
+                                    widgets=widgets)
+
+    @expose('/publish/<pk>')
+    @has_access
+    def publish(self, pk):
+        return utils.publish_item(self, pk)
+
 
     @expose('/add', methods=['GET', 'POST'])
     @has_access
@@ -812,7 +857,7 @@ class SliceModelView(SupersetModelView, DeleteMixin):  # noqa
 appbuilder.add_view(
     SliceModelView,
     "Slices",
-    label=__("Slices"),
+    label=_("Slices"),
     icon="fa-bar-chart",
     category="",
     category_icon='',)
@@ -840,7 +885,7 @@ appbuilder.add_view_no_menu(SliceAddView)
 
 class DashboardModelView(SupersetModelView, DeleteMixin):  # noqa
     datamodel = SQLAInterface(models.Dashboard)
-    list_columns = ['dashboard_link', 'creator', 'modified']
+    list_columns = ['dashboard_link', 'creator', 'modified','is_published']
     edit_columns = [
         'dashboard_title', 'slug', 'slices', 'owners', 'position_json', 'css',
         'json_metadata']
@@ -888,6 +933,9 @@ class DashboardModelView(SupersetModelView, DeleteMixin):  # noqa
         'table_names': _("Underlying Tables"),
     }
 
+    publish_type = 3  # Tell portal website when publish
+    publish_destination_url = config['DASHBOARD_PUBLISH_URL']  # Where to publish
+
     def pre_add(self, obj):
         obj.slug = obj.slug.strip() or None
         if obj.slug:
@@ -924,11 +972,29 @@ class DashboardModelView(SupersetModelView, DeleteMixin):  # noqa
             dashboards_url='/dashboardmodelview/list'
         )
 
+    @expose('/list/')
+    @has_access
+    def list(self):
+        widgets = self._list()
+        widgets['list'].template = 'superset/fab_overrides/list_with_publish.html'
+        include_columns = self.list_columns[:]
+        include_columns.remove('is_published')
+        widgets['list'].template_args['include_columns'] = include_columns
+        widgets['list'].template_args['order_columns'] = include_columns
+        return self.render_template(self.list_template,
+                                    title=self.list_title,
+                                    widgets=widgets)
+
+    @expose('/publish/<pk>')
+    @has_access
+    def publish(self, pk):
+        return utils.publish_item(self, pk)
+
 
 appbuilder.add_view(
     DashboardModelView,
     "Dashboards",
-    label=__("Dashboards"),
+    label=_("Dashboards"),
     icon="fa-dashboard",
     category='',
     category_icon='',)
@@ -958,9 +1024,9 @@ class LogModelView(SupersetModelView):
 appbuilder.add_view(
     LogModelView,
     "Action Log",
-    label=__("Action Log"),
+    label=_("Action Log"),
     category="Security",
-    category_label=__("Security"),
+    category_label=_("Security"),
     icon="fa-list-ol")
 
 
@@ -982,8 +1048,8 @@ class DruidDatasourceModelView(SupersetModelView, DeleteMixin):  # noqa
     description_columns = {
         'offset': _("Timezone offset (in hours) for this datasource"),
         'description': Markup(
-            "Supports <a href='"
-            "https://daringfireball.net/projects/markdown/'>markdown</a>"),
+            _("Supports <a href='"
+            "https://daringfireball.net/projects/markdown/'>markdown</a>")),
     }
     base_filters = [['id', FilterDruidDatasource, lambda: []]]
     label_columns = {
@@ -1022,9 +1088,9 @@ if config['DRUID_IS_ACTIVE']:
     appbuilder.add_view(
         DruidDatasourceModelView,
         "Druid Datasources",
-        label=__("Druid Datasources"),
+        label=_("Druid Datasources"),
         category="Sources",
-        category_label=__("Sources"),
+        category_label=_("Sources"),
         icon="fa-cube")
 
 
@@ -1156,7 +1222,7 @@ class Superset(BaseSupersetView):
                     datasource_type=datasource.type)
                 db.session.add(access_request)
                 db.session.commit()
-            flash(__("Access was requested"), "info")
+            flash(_("Access was requested"), "info")
             return redirect('/')
 
         return self.render_template(
@@ -1207,7 +1273,7 @@ class Superset(BaseSupersetView):
             if role_to_grant:
                 role = sm.find_role(role_to_grant)
                 requested_by.roles.append(role)
-                flash(__(
+                flash(_(
                     "%(user)s was granted the role %(role)s that gives access "
                     "to the %(datasource)s",
                     user=requested_by.username,
@@ -1218,12 +1284,12 @@ class Superset(BaseSupersetView):
                 perm_view = sm.find_permission_view_menu(
                     'datasource_access', datasource.perm)
                 sm.add_permission_role(sm.find_role(role_to_extend), perm_view)
-                flash(__("Role %(r)s was extended to provide the access to"
+                flash(_("Role %(r)s was extended to provide the access to"
                          " the datasource %(ds)s",
                          r=role_to_extend, ds=datasource.full_name), "info")
 
         else:
-            flash(__("You have no permission to approve this request"),
+            flash(_("You have no permission to approve this request"),
                   "danger")
             return redirect('/accessrequestsmodelview/list/')
         for r in requests:
@@ -1307,7 +1373,9 @@ class Superset(BaseSupersetView):
     def explore(self, datasource_type, datasource_id):
         viz_type = request.args.get("viz_type")
         slice_id = request.args.get('slice_id')
-        slc = db.session.query(models.Slice).filter_by(id=slice_id).first()
+        slc = None
+        if slice_id:
+            slc = db.session.query(models.Slice).filter_by(id=slice_id).first()
 
         error_redirect = '/slicemodelview/list/'
         datasource_class = SourceRegistry.sources[datasource_type]
@@ -1329,7 +1397,7 @@ class Superset(BaseSupersetView):
 
         if not self.datasource_access(viz_obj.datasource):
             flash(
-                __(get_datasource_access_error_msg(viz_obj.datasource.name)),
+                _(get_datasource_access_error_msg(viz_obj.datasource.name)),
                 "danger")
             return redirect(
                 'superset/request_access/?'
@@ -1445,10 +1513,10 @@ class Superset(BaseSupersetView):
                 dashboard_title=request.args.get('new_dashboard_name'),
                 owners=[g.user] if g.user else [])
             flash(
-                "Dashboard [{}] just got created and slice [{}] was added "
+                _("Dashboard [{}] just got created and slice [{}] was added "
                 "to it".format(
                     dash.dashboard_title,
-                    slc.slice_name),
+                    slc.slice_name)),
                 "info")
 
         if dash and slc not in dash.slices:
@@ -1462,7 +1530,7 @@ class Superset(BaseSupersetView):
 
     def save_slice(self, slc):
         session = db.session()
-        msg = "Slice [{}] has been saved".format(slc.slice_name)
+        msg = _("Slice [{}] has been saved".format(slc.slice_name))
         session.add(slc)
         session.commit()
         flash(msg, "info")
@@ -1470,12 +1538,12 @@ class Superset(BaseSupersetView):
     def overwrite_slice(self, slc):
         can_update = check_ownership(slc, raise_if_false=False)
         if not can_update:
-            flash("You cannot overwrite [{}]".format(slc), "danger")
+            flash(_("You cannot overwrite [{}]".format(slc)), "danger")
         else:
             session = db.session()
             session.merge(slc)
             session.commit()
-            msg = "Slice [{}] has been overwritten".format(slc.slice_name)
+            msg = _("Slice [{}] has been overwritten".format(slc.slice_name))
             flash(msg, "info")
 
     @api
@@ -1605,9 +1673,9 @@ class Superset(BaseSupersetView):
             engine.connect()
             return json.dumps(engine.table_names(), indent=4)
         except Exception as e:
-            return Response((
-                "Connection failed!\n\n"
-                "The error message returned was:\n{}").format(e),
+            return Response(
+                _("Connection failed!\n\n"
+                "The error message returned was:\n{}".format(e)),
                 status=500,
                 mimetype="application/json")
 
@@ -1623,13 +1691,13 @@ class Superset(BaseSupersetView):
         db_name = request.args.get('db_name')
 
         if not slice_id and not (table_name and db_name):
-            return json_error_response(__(
+            return json_error_response(_(
                 "Malformed request. slice_id or table_name and db_name "
                 "arguments are expected"), status=400)
         if slice_id:
             slices = session.query(models.Slice).filter_by(id=slice_id).all()
             if not slices:
-                return json_error_response(__(
+                return json_error_response(_(
                     "Slice %(id)s not found", id=slice_id), status=404)
         elif table_name and db_name:
             table = (
@@ -1640,7 +1708,7 @@ class Superset(BaseSupersetView):
                     models.SqlaTable.table_name == table_name)
             ).first()
             if not table:
-                json_error_response(__(
+                json_error_response(_(
                     "Table %(t)s wasn't found in the database %(d)s",
                     t=table_name, s=db_name), status=404)
             slices = session.query(models.Slice).filter_by(
@@ -1705,7 +1773,7 @@ class Superset(BaseSupersetView):
         for datasource in datasources:
             if not self.datasource_access(datasource):
                 flash(
-                    __(get_datasource_access_error_msg(datasource.name)),
+                    _(get_datasource_access_error_msg(datasource.name)),
                     "danger")
                 return redirect(
                     'superset/request_access/?'
@@ -1764,14 +1832,14 @@ class Superset(BaseSupersetView):
 
         user = sm.find_user(username=user_name)
         if not user:
-            err_msg = __("Can't find User '%(name)s', please ask your admin "
+            err_msg = _("Can't find User '%(name)s', please ask your admin "
                          "to create one.", name=user_name)
             logging.error(err_msg)
             return json_error_response(err_msg)
         cluster = db.session.query(models.DruidCluster).filter_by(
             cluster_name=cluster_name).first()
         if not cluster:
-            err_msg = __("Can't find DruidCluster with cluster_name = "
+            err_msg = _("Can't find DruidCluster with cluster_name = "
                          "'%(name)s'", name=cluster_name)
             logging.error(err_msg)
             return json_error_response(err_msg)
@@ -1991,8 +2059,8 @@ class Superset(BaseSupersetView):
             return Response(
                 json.dumps({
                     'error': (
-                        "Data could not be retrived. You may want to "
-                        "re-run the query."
+                        _("Data could not be retrived. You may want to "
+                        "re-run the query.")
                     )
                 }),
                 status=410,
@@ -2012,7 +2080,7 @@ class Superset(BaseSupersetView):
 
         if not mydb:
             json_error_response(
-                'Database with id {} is missing.'.format(database_id))
+                _('Database with id {} is missing.'.format(database_id)))
 
         if not self.database_access(mydb):
             json_error_response(
@@ -2055,9 +2123,9 @@ class Superset(BaseSupersetView):
             with utils.timeout(
                     seconds=SQLLAB_TIMEOUT,
                     error_message=(
-                        "The query exceeded the {SQLLAB_TIMEOUT} seconds "
+                        _("The query exceeded the {SQLLAB_TIMEOUT} seconds "
                         "timeout. You may want to run your query as a "
-                        "`CREATE TABLE AS` to prevent timeouts."
+                        "`CREATE TABLE AS` to prevent timeouts.")
                     ).format(**locals())):
                 data = sql_lab.get_sql_results(query_id, return_results=True)
         except Exception as e:
@@ -2158,7 +2226,7 @@ class Superset(BaseSupersetView):
         """Get the updated queries."""
         if not g.user.get_id():
             return Response(
-                json.dumps({'error': "Please login to access the queries."}),
+                json.dumps({'error': _("Please login to access the queries.")}),
                 status=403,
                 mimetype="application/json")
 
@@ -2239,8 +2307,8 @@ class Superset(BaseSupersetView):
                 cluster.refresh_datasources()
             except Exception as e:
                 flash(
-                    "Error while processing cluster '{}'\n{}".format(
-                        cluster_name, utils.error_msg_from_exception(e)),
+                    _("Error while processing cluster '{}'\n{}".format(
+                        cluster_name, utils.error_msg_from_exception(e))),
                     "danger")
                 logging.exception(e)
                 return redirect('/druidclustermodelview/list/')
@@ -2278,9 +2346,10 @@ appbuilder.add_view_no_menu(Superset)
 if config['DRUID_IS_ACTIVE']:
     appbuilder.add_link(
         "Refresh Druid Metadata",
+        label=_("Refresh Druid Metadata"),
         href='/superset/refresh_datasources/',
         category='Sources',
-        category_label=__("Sources"),
+        category_label=_("Sources"),
         category_icon='fa-database',
         icon="fa-cog")
 
@@ -2299,22 +2368,24 @@ appbuilder.add_separator("Sources")
 appbuilder.add_view(
     CssTemplateModelView,
     "CSS Templates",
-    label=__("CSS Templates"),
+    label=_("CSS Templates"),
     icon="fa-css3",
     category="Manage",
-    category_label=__("Manage"),
+    category_label=_("Manage"),
     category_icon='')
 
 appbuilder.add_view_no_menu(CssTemplateAsyncModelView)
 
 appbuilder.add_link(
     'SQL Editor',
+    label=_('SQL Editor'),
     href='/superset/sqllab',
     category_icon="fa-flask",
     icon="fa-flask",
     category='SQL Lab')
 appbuilder.add_link(
     'Query Search',
+    label=_('Query Search'),
     href='/superset/sqllab#search',
     icon="fa-search",
     category_icon="fa-flask",
